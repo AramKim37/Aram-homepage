@@ -1,10 +1,28 @@
+"use client";
+
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 flex items-start justify-around mx-auto max-w-7xl">
-      <div className="flex flex-row items-center">
+    <header className="sticky top-0 p-5 flex items-start justify-around mx-auto max-w-7xl z-20 xl:items-center">
+      <motion.div
+        initial={{
+          x: -500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="flex flex-row items-center"
+      >
         {/* Social Icons */}
         <SocialIcon
           url="https://www.linkedin.com/in/aram-kim/"
@@ -21,8 +39,23 @@ const Header = () => {
           fgColor="gray"
           bgColor="transparent"
         />
-      </div>
-      <div classname="flex flex-row items-center text-gray-300 cursor-pointer">
+      </motion.div>
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        classname="flex flex-row items-center text-gray-300 cursor-pointer"
+      >
         <SocialIcon
           className="cursor-pointer"
           network="email"
@@ -32,7 +65,7 @@ const Header = () => {
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
           Get In Touch
         </p>
-      </div>
+      </motion.div>
     </header>
   );
 };
