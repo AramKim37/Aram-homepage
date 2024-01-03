@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 flex items-start justify-between mx-auto max-w-7xl">
+    <header className="sticky top-0 flex items-start justify-around mx-auto max-w-7xl">
       <div className="flex flex-row items-center">
         {/* Social Icons */}
         <SocialIcon
