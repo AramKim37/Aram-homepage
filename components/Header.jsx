@@ -25,7 +25,7 @@ const Header = () => {
       >
         {/* Social Icons */}
         <SocialIcon
-          url="https://www.linkedin.com/in/aram-kim/"
+          url="https://github.com/AramKim37"
           fgColor="gray"
           bgColor="transparent"
         />
@@ -42,12 +42,14 @@ const Header = () => {
       </motion.div>
       <motion.div
         initial={{
-          x: 500,
+          x: -2000,
+          // y: 2500,
           opacity: 0,
           scale: 0.5,
         }}
         animate={{
           x: 0,
+          // y: 0,
           opacity: 1,
           scale: 1,
         }}
