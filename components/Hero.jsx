@@ -4,6 +4,7 @@ import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Me from "@/public/image/me.jpeg";
 import Aram from "@/public/image/aram.jpg";
+import Link from "next/link";
 
 const Hero = () => {
   const [text, count] = useTypewriter({
@@ -23,7 +24,7 @@ const Hero = () => {
         alt="Me"
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
       />
-      <div>
+      <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
           Software Engineer
         </h2>
@@ -32,10 +33,18 @@ const Hero = () => {
           <Cursor cursorColor="#f7AB0A" />
         </h1>
         <div>
-          <button className="heroButton">About</button>
-          <button className="heroButton">Experience</button>
-          <button className="heroButton">Skills</button>
-          <button className="heroButton">Projects</button>
+          <Link href="#about">
+            <button className="heroButton">About</button>
+          </Link>
+          <Link href="#experience">
+            <button className="heroButton">Experience</button>
+          </Link>
+          <Link href="#skills">
+            <button className="heroButton">Skills</button>
+          </Link>
+          <Link href="#projects">
+            <button className="heroButton">Projects</button>
+          </Link>
         </div>
       </div>
     </div>
