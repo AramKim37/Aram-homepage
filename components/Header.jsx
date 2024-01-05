@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-around mx-auto max-w-7xl z-20 xl:items-center">
+    <header className="sticky top-0 p-5 flex items-center justify-around mx-auto max-w-7xl z-20">
       <motion.div
         initial={{
           x: -500,
@@ -23,8 +23,11 @@ const Header = () => {
         }}
         className="flex flex-row items-center"
       >
+        <h1 className="uppercase md:inline-flex text-sm text-gray-400">
+          Aram`s Home
+        </h1>
         {/* Social Icons */}
-        <SocialIcon
+        {/* <SocialIcon
           url="https://github.com/AramKim37"
           fgColor="gray"
           bgColor="transparent"
@@ -38,7 +41,7 @@ const Header = () => {
           url="https://www.linkedin.com/in/aram-kim/"
           fgColor="gray"
           bgColor="transparent"
-        />
+        /> */}
       </motion.div>
       <motion.div
         initial={{
