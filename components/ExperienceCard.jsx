@@ -2,10 +2,12 @@
 import { motion } from "framer-motion";
 import Capstone from "@/public/image/capstone.png";
 import Bootcamp from "@/public/image/bootcamp.png";
+import React from "@/public/image/react.svg";
+import Image from "next/image";
 
 const ExperienceCard = () => {
   return (
-    <article>
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center p-10 bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
         initial={{
           y: -100,
@@ -22,8 +24,12 @@ const ExperienceCard = () => {
       <div className="px-0 md:px-10">
         <h4>Capstone Project</h4>
         <p>SAIT</p>
-        <div className="flex space-x-2 my-2">icons</div>
-        <p>Started work...End work</p>
+        <div className="flex space-x-2 my-2">
+          <Image src={React} alt="react" className="h-10 w-10 rounded-full" />
+          <Image src={React} alt="react" className="h-10 w-10 rounded-full" />
+          <Image src={React} alt="react" className="h-10 w-10 rounded-full" />
+        </div>
+        <p className="uppercase py-5 text-gray-300">Started work...End work</p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
           <li>summary points</li>
           <li>summary points</li>
