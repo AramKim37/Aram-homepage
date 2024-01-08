@@ -48,13 +48,13 @@ const Projects = () => {
         initial={{ opacity: 0, x: 500 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.5 }}
-        className="w-[70%] absolute top-[30%] bg-gray-600 left-0 h-[500px] -skew-y-12"
+        className="w-[100%] absolute top-[30%] bg-gray-500 left-0 h-[500px] -skew-y-12"
       />
       <motion.div
         initial={{ opacity: 0, x: -500 }}
         whileInView={{ opacity: 1, x: 500 }}
         transition={{ duration: 1.5 }}
-        className="w-[70%] absolute top-[30%] bg-gray-600 left-0 h-[500px] -skew-y-12"
+        className="w-[100%] absolute top-[30%] bg-gray-500 left-0 h-[500px] -skew-y-12"
       />
     </motion.div>
   );

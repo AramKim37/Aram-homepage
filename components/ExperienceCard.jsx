@@ -8,6 +8,7 @@ import Image from "next/image";
 const ExperienceCard = () => {
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center p-10 bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+      {/*w-screen하면 한페이지당 하나씩만 가능해짐 */}
       <motion.img
         initial={{
           y: -100,
