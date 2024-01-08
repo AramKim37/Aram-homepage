@@ -20,11 +20,7 @@ const Hero = () => {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      {/* <Image
-        src={Aram}
-        alt="Me"
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
-      /> */}
+
       <motion.img
         initial={{ y: -300, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
