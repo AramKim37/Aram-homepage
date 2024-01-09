@@ -10,7 +10,7 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    window.location.href = `mailto:aramkim37@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} ${data.email}`;
+    window.location.href = `mailto:aramkim37@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message}. From : ${data.email}`;
     console.log(data);
   };
 
@@ -62,10 +62,13 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg animate-pulse"
           >
             Submit
           </button>
+          <div className="w-full relative">
+            <div className="border-t absolute w-20 border-white flex items-center justify-center aram" />
+          </div>
         </form>
       </div>
     </div>
