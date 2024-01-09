@@ -10,6 +10,9 @@
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]  text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 
     focus:text-[#F7AB0A]/40;
   }
+  .background {
+    background: linear-gradient(-45deg, #8691b3, #edeef3);
+  }
 
   @keyframes bounce {
     0%,
@@ -22,7 +25,7 @@
       animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
     }
   }
-  .aram {
+  .line {
     animation: bounce 3s infinite;
   }
 }

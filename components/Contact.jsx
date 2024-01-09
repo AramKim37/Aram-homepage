@@ -67,7 +67,7 @@ const Contact = () => {
             Submit
           </button>
           <div className="w-full relative">
-            <div className="border-t absolute w-20 border-white flex items-center justify-center aram" />
+            <div className="border-t absolute w-20 border-blue-300 flex items-center justify-center line" />
           </div>
         </form>
       </div>
