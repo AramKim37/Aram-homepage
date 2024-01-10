@@ -3,6 +3,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -23,9 +24,11 @@ const Header = () => {
         }}
         className="flex flex-row items-center"
       >
-        <h1 className="uppercase md:inline-flex text-sm text-gray-400">
-          Aram`s Home
-        </h1>
+        <Link href="#hero">
+          <h1 className="uppercase md:inline-flex text-sm text-gray-400">
+            Aram`s Home
+          </h1>
+        </Link>
         {/* Social Icons */}
         {/* <SocialIcon
           url="https://github.com/AramKim37"
@@ -61,15 +64,17 @@ const Header = () => {
         }}
         classname="flex flex-row items-center text-gray-300 cursor-pointer"
       >
-        <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Get In Touch
-        </p>
+        <Link href="#contact">
+          {/* <SocialIcon
+            className="cursor-pointer"
+            network="email"
+            fgColor="gray"
+            bgColor="transparent"
+          /> */}
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+            Get In Touch
+          </p>
+        </Link>
       </motion.div>
     </header>
   );

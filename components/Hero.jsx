@@ -34,7 +34,7 @@ const Hero = () => {
         </h2>
         <h1 className="text-3xl lg:text-4xl font-semibold scroll-px-10">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#5725a3" />
+          <Cursor cursorColor="#5aa5e6" />
         </h1>
         <div>
           <Link href="#about">

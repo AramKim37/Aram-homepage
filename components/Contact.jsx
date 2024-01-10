@@ -20,7 +20,7 @@ const Contact = () => {
         contact
       </h3>
       <div className="text-center space-y-3">
-        <h4 className="text-3xl text-gray-500">Let`s talk</h4>
+        <h4 className="text-3xl text-gray-500 uppercase">Let`s talk</h4>
       </div>
       <form
         className="flex flex-col space-y-2 w-fit mx-auto"
@@ -60,7 +60,7 @@ const Contact = () => {
           Submit
         </button>
         <div className="w-full relative">
-          <div className="border-t absolute w-20 border-[#38598b] flex items-center justify-center line" />
+          <div className="border-t -top-2 absolute w-20 border-[#38598b] flex items-center justify-center line" />
         </div>
       </form>
     </div>
