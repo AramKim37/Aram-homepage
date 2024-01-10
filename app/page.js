@@ -37,6 +37,11 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
+      <footer className="sticky bottom-5 w-full cursor-pointer">
+        <div className="text-center">
+          copyright © {new Date().getFullYear()} - Developed by Aram Kim
+        </div>
+      </footer>
     </main>
   );
 }
