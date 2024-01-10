@@ -26,7 +26,7 @@ const Hero = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 2.5 }}
         src={Aram.src}
-        className="relative rounded-full h-40 w-40 mx-auto object-cover border-2 border-gray-500 animate-pulse"
+        className="relative rounded-full h-40 w-40 mx-auto object-cover border-2 border-[#f5e9e9] animate-pulse"
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
