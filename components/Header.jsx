@@ -4,6 +4,8 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import Email from "@/public/image/email.png";
 
 const Header = () => {
   return (
@@ -25,7 +27,7 @@ const Header = () => {
         className="flex flex-row items-center"
       >
         <Link href="#hero">
-          <h1 className="uppercase md:inline-flex text-sm text-gray-400">
+          <h1 className="uppercase  md:inline-flex text-sm text-gray-400">
             Aram`s Home
           </h1>
         </Link>
@@ -71,9 +73,12 @@ const Header = () => {
             fgColor="gray"
             bgColor="transparent"
           /> */}
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-            Get In Touch
-          </p>
+          <div className="flex space-x-3 items-center">
+            <Image src={Email} alt="email" className="h-8 w-8 text-gray-500" />
+            <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+              Get In Touch
+            </p>
+          </div>
         </Link>
       </motion.div>
     </header>

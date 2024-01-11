@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -37,11 +38,15 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
-      <footer className="sticky bottom-5 w-full cursor-pointer">
-        <div className="text-center">
-          copyright © {new Date().getFullYear()} - Developed by Aram Kim
-        </div>
-      </footer>
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="text-center nameText">
+            copyright © {new Date().getFullYear()} - Developed by{" "}
+            <span className="uppercase">Aram Kim</span>
+            {/*need to add gradient */}
+          </div>
+        </footer>
+      </Link>
     </main>
   );
 }
