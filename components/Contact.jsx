@@ -16,17 +16,19 @@ const Contact = () => {
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 text-2xl">
+      <h3 className="absolute top-16 tracking-[20px] uppercase text-gray-500 text-2xl md:top-24">
         contact
       </h3>
       <div className="text-center space-y-3">
-        <h4 className="text-3xl text-gray-500 uppercase">Let`s talk</h4>
+        <h4 className="text-xl pt-10 text-gray-500/70 uppercase md:text-xl">
+          Let`s talk
+        </h4>
       </div>
       <form
-        className="flex flex-col space-y-2 w-fit mx-auto"
+        className="flex flex-col gap-2 w-fit mx-auto"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="flex space-x-2 ">
+        <div className="flex flex-col gap-2 md:flex-row">
           <input
             {...register("name")}
             className="contactInput"
@@ -59,9 +61,6 @@ const Contact = () => {
         >
           Submit
         </button>
-        <div className="w-full relative">
-          <div className="border-t -top-2 absolute w-20 border-[#38598b] flex items-center justify-center line" />
-        </div>
       </form>
     </div>
   );
