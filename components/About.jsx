@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Aram from "@/public/image/me.jpeg";
-import Image from "next/image";
 const About = () => {
   return (
     <motion.div

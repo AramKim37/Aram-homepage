@@ -25,26 +25,23 @@ const Header = () => {
         className="flex flex-row items-center"
       >
         <Link href="#hero">
-          <h1 className="uppercase  md:inline-flex text-sm text-gray-400">
+          <h1 className="uppercase  md:inline-flex text-m text-gray-400">
             Aram`s Home
           </h1>
         </Link>
         {/* Social Icons */}
-        {/* <SocialIcon
+        <SocialIcon
+          url="https://www.linkedin.com/in/aram-kim/"
+          fgColor="#94a3b8"
+          bgColor="transparent"
+          style={{ width: 40, height: 40 }}
+        />
+        <SocialIcon
           url="https://github.com/AramKim37"
-          fgColor="gray"
+          fgColor="#94a3b8"
           bgColor="transparent"
+          style={{ width: 40, height: 40 }}
         />
-        <SocialIcon
-          url="https://www.linkedin.com/in/aram-kim/"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/aram-kim/"
-          fgColor="gray"
-          bgColor="transparent"
-        /> */}
       </motion.div>
       <motion.div
         initial={{
@@ -71,7 +68,7 @@ const Header = () => {
             fgColor="gray"
             bgColor="transparent"
           /> */}
-          <div className="flex space-x-3 items-center">
+          <div className="flex space-x-3 items-center hover:animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -87,7 +84,7 @@ const Header = () => {
               />
             </svg>
 
-            <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+            <p className="uppercase hidden md:inline-flex text-m text-gray-400">
               Get In Touch
             </p>
           </div>
