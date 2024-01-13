@@ -32,7 +32,7 @@ const Hero = () => {
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
           Software Engineer
         </h2>
-        <h1 className="text-3xl lg:text-4xl font-semibold scroll-px-10">
+        <h1 className="text-2xl lg:text-4xl font-semibold scroll-px-10 md:text-3xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#5aa5e6" />
         </h1>

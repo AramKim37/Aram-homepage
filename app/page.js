@@ -40,7 +40,7 @@ export default function Home() {
       </section>
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="text-center nameText">
+          <div className="text-center nameText text-[12px] md:text-base">
             copyright © {new Date().getFullYear()} - Developed by{" "}
             <span className="uppercase">Aram Kim</span>
             {/*need to add gradient */}
