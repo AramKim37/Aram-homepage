@@ -5,6 +5,8 @@ import { SocialIcon } from "react-social-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Resume from "@/public/image/resume.png";
+
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -61,8 +63,23 @@ const About = () => {
             bgColor="transparent"
             style={{ width: 50, height: 50 }}
           />
-          <a href="/image/resume.pdf" download>
-            <button className="heroButton">resume</button>
+          <a href="/image/resume.pdf" download className="relative">
+            <button
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="heroButton border-gray-500 hover:animate-bounce"
+            >
+              resume
+            </button>
+            {isHovered && (
+              <Image
+                src={Resume}
+                alt="resume"
+                width={100}
+                height={100}
+                className="absolute object-cover rounded-xl max-[370px]:hidden md:block"
+              />
+            )}
           </a>
         </div>
       </div>
