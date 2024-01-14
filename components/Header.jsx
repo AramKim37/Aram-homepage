@@ -25,23 +25,11 @@ const Header = () => {
         className="flex flex-row items-center"
       >
         <Link href="#hero">
-          <h1 className="uppercase  md:inline-flex text-m text-gray-400">
-            Aram`s Home
+          <h1 className="uppercase  md:inline-flex text-sm text-gray-400 md:text-m">
+            Aram Kim
           </h1>
         </Link>
         {/* Social Icons */}
-        <SocialIcon
-          url="https://www.linkedin.com/in/aram-kim/"
-          fgColor="#94a3b8"
-          bgColor="transparent"
-          style={{ width: 40, height: 40 }}
-        />
-        <SocialIcon
-          url="https://github.com/AramKim37"
-          fgColor="#94a3b8"
-          bgColor="transparent"
-          style={{ width: 40, height: 40 }}
-        />
       </motion.div>
       <motion.div
         initial={{
@@ -84,7 +72,7 @@ const Header = () => {
               />
             </svg>
 
-            <p className="uppercase hidden md:inline-flex text-m text-gray-400">
+            <p className="uppercase hidden text-sm md:inline-flex md:text-m text-gray-400">
               Get In Touch
             </p>
           </div>

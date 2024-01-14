@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="background text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
+    <main className="background text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 ">
       {/* Header */}
       <Header />
       {/* Hero */}
