@@ -25,8 +25,8 @@ const Header = () => {
         className="flex flex-row items-center"
       >
         <Link href="#hero">
-          <h1 className="uppercase  md:inline-flex text-sm text-gray-400 md:text-m">
-            ARAM KIM
+          <h1 className="flex gap-2 uppercase md:inline-flex text-sm text-gray-400 md:text-m">
+            ARAM <span className="nameText">KIM</span>
           </h1>
         </Link>
         {/* Social Icons */}

@@ -14,9 +14,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 justify-center gap-5 mx-auto items-center md:gap-10">
+    <div className="h-screen flex relative flex-col text-center md:text-left max-w-7xl justify-center gap-5 mx-auto items-center md:gap-10">
       <div className="text-center">
-        <h4 className="text-m pt-10 text-gray-500/70 uppercase md:text-xl">
+        <h4 className="text-m pt-[60px] text-gray-500/70 uppercase md:text-xl md:pt-0">
           Let`s talk
         </h4>
       </div>

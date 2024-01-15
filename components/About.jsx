@@ -14,9 +14,10 @@ const About = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 3.5 }}
-      className="flex relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center h-screen gap-2"
+      className="flex relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center h-screen gap-2
+      max-[375px]:flex-col"
     >
-      {/* <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl max-[375px]:hidden">
+      {/* <h3 className="absolute top-24  uppercase tracking-[20px]  text-gray-500 text-2xl max-[375px]:hidden max-[375px]:-z-2">
         About
       </h3> */}
 
@@ -32,14 +33,14 @@ const About = () => {
         }}
         viewport={{ once: true }}
         src={Aram.src}
-        className="pt-2 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-[350px]"
+        className="pt-2 md:mb-0 flex-shrink-0 w-32 h-44 rounded-xl object-cover md:rounded-lg md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-[350px]"
       />
 
-      <div className="px-0 text-left md:px-10">
-        <h4 className="text-sm font-semibold md:text-3xl text-gray-500">
+      <div className="px-2 text-left md:px-10">
+        <h4 className="text-sm font-semibold pt-10 md:text-4xl md:pt-0 text-gray-500 ">
           Who I am
         </h4>
-        <p className="text-[12px] text-gray-500 md:text-base max-[280px]:text-[10px]">
+        <p className="text-[10px] md:pt-5 text-gray-500 md:text-base md:text-[12px]">
           Graduate of the Southern Alberta Institute of Technology in the
           information Technology - Software Development Program. Since I started
           studying computer science, I am always passionate and motivated about
@@ -78,7 +79,7 @@ const About = () => {
                 alt="resume"
                 width={100}
                 height={100}
-                className="absolute object-cover rounded-xl max-[370px]:hidden md:block"
+                className="absolute object-cover rounded-xl max-[370px]:hidden  md:block"
               />
             )}
           </a>
