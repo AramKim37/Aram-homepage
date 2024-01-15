@@ -4,14 +4,27 @@
 
 @layer components {
   .heroButton {
-    @apply px-4 py-2 my-3 border border-[#242424] rounded-full uppercase text-[10px] border-transparent tracking-widest text-gray-500 transition-all hover:border-[#5aa5e6]/80 hover:text-[#5aa5e6] hover:font-bold hover:border-s-2 md:text-sm;
+    @apply px-4 py-1 my-3 border border-[#242424] rounded-full uppercase text-[10px] border-transparent tracking-widest text-gray-500 transition-all hover:border-[#5aa5e6]/80 hover:text-[#5aa5e6] hover:font-bold hover:border-s-2 md:text-sm md:py-2;
   }
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]  text-gray-500 placeholder-gray-500 transition-all focus:border-[#a2a8d3]/40 
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-2 border-[#242424]  text-gray-500 placeholder-gray-500 transition-all focus:border-[#a2a8d3]/40 md:px-12 md:py-8 
     focus:text-[#4e6187];
   }
   .background {
-    background: linear-gradient(-45deg, #8691b3, #edeef3);
+    /* background: linear-gradient(-45deg, #8691b3, #edeef3); */
+    @apply bg-[#1B1B1B];
+  }
+
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+  .ping_animation {
+    animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
 
   @keyframes bounce {

@@ -18,7 +18,7 @@ const Hero = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden md:space-y-8">
       <BackgroundCircles />
 
       <motion.img
@@ -26,13 +26,13 @@ const Hero = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 2.5 }}
         src={Aram.src}
-        className="relative rounded-full h-40 w-40 mx-auto object-cover border-2 border-[#f5e9e9] animate-pulse"
+        className="relative rounded-full h-36 w-36 mx-auto object-cover border-2 border-[#f5e9e9] animate-pulse md:h-40 md:w-40"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
+        <h2 className="md:text-sm text-[12px] uppercase text-gray-500 pb-2 tracking-[10px]">
           Software Engineer
         </h2>
-        <h1 className="text-2xl lg:text-4xl font-semibold scroll-px-10 md:text-3xl">
+        <h1 className="text-xl lg:text-4xl font-semibold scroll-px-10 md:text-3xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#5aa5e6" />
         </h1>

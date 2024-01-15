@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -38,15 +39,7 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="text-center nameText text-[12px] md:text-base">
-            copyright © {new Date().getFullYear()} - Developed by{" "}
-            <span className="uppercase">Aram Kim</span>
-            {/*need to add gradient */}
-          </div>
-        </footer>
-      </Link>
+      <Footer />
     </main>
   );
 }

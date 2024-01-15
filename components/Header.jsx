@@ -26,7 +26,7 @@ const Header = () => {
       >
         <Link href="#hero">
           <h1 className="uppercase  md:inline-flex text-sm text-gray-400 md:text-m">
-            Aram Kim
+            ARAM KIM
           </h1>
         </Link>
         {/* Social Icons */}
