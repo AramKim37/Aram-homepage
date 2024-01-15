@@ -55,19 +55,21 @@ const About = () => {
             url="https://www.linkedin.com/in/aram-kim/"
             fgColor="#64748b"
             bgColor="transparent"
+            target="_blank"
             style={{ width: 50, height: 50 }}
           />
           <SocialIcon
             url="https://github.com/AramKim37"
             fgColor="#64748b"
             bgColor="transparent"
+            target="_blank"
             style={{ width: 50, height: 50 }}
           />
-          <a href="/image/resume.pdf" download className="relative">
+          <a href="/image/Aram_Resume.pdf" download className="relative">
             <button
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="heroButton border-gray-500 hover:animate-bounce"
+              className="heroButton border-gray-500 font-bold hover:bg-white hover:animate-bounce hover:font-bold"
             >
               resume
             </button>
