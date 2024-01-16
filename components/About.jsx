@@ -14,12 +14,11 @@ const About = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 3.5 }}
-      className="flex relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center h-screen gap-2
-      max-[375px]:flex-col"
+      className="flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center h-screen md:gap-2 pt-32"
     >
-      {/* <h3 className="absolute top-24  uppercase tracking-[20px]  text-gray-500 text-2xl max-[375px]:hidden max-[375px]:-z-2">
+      <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl hidden md:block md:top-40">
         About
-      </h3> */}
+      </h3>
 
       <motion.img
         initial={{
@@ -33,14 +32,14 @@ const About = () => {
         }}
         viewport={{ once: true }}
         src={Aram.src}
-        className="pt-2 md:mb-0 flex-shrink-0 w-32 h-44 rounded-xl object-cover md:rounded-lg md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-[350px]"
+        className="pt-2 md:mb-0 flex-shrink-0 w-36 h-44 rounded-xl object-cover md:rounded-lg md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-[350px]"
       />
 
-      <div className="px-2 text-left md:px-10">
-        <h4 className="text-sm font-semibold pt-10 md:text-4xl md:pt-0 text-gray-500 ">
+      <div className="px-2 text-left mb-10 md:px-10">
+        <h4 className="text-sm text-center pb-5 md:text-left font-semibold pt-10 md:text-4xl md:pt-0 text-gray-500 ">
           Who I am
         </h4>
-        <p className="text-[10px] md:pt-5 text-gray-500 md:text-base md:text-[12px]">
+        <p className="text-[12px] md:pt-5 text-gray-500 md:text-base md:text-[12px]">
           Graduate of the Southern Alberta Institute of Technology in the
           information Technology - Software Development Program. Since I started
           studying computer science, I am always passionate and motivated about
@@ -48,7 +47,7 @@ const About = () => {
           willing to learn new tech skills. In addtion, I am a qualified
           developer with strong creative and analytical skills.
         </p>
-        <div className="flex items-center gap-5 justify-center md:justify-end">
+        <div className="flex pt-5 items-center gap-5 justify-center md:justify-end">
           <SocialIcon
             url="https://www.linkedin.com/in/aram-kim/"
             fgColor="#64748b"

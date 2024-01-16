@@ -15,6 +15,9 @@ const Contact = () => {
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left max-w-7xl justify-center gap-5 mx-auto items-center md:gap-10">
+      <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl hidden md:block md:top-40">
+        Contact
+      </h3>
       <div className="text-center">
         <h4 className="text-m pt-[60px] text-gray-500/70 uppercase md:text-xl md:pt-0">
           Let`s talk
@@ -54,7 +57,7 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="bg-[#e7eaf6]/40 py-2 mb-12 px-10 rounded-md text-[#38598b] font-bold text-[12px] heroButton animate-pulse md:py-5 md:text-xl md:mb-0"
+            className="bg-[#e7eaf6]/40 py-6 mb-12 px-10 rounded-md text-[#38598b] font-bold text-[12px] heroButton animate-pulse md:py-5 md:text-xl md:mb-0"
           >
             Submit
           </button>

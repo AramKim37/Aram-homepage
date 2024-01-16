@@ -14,6 +14,9 @@ import Image from "next/image";
 const ExperienceCard = () => {
   return (
     <div className="h-screen relative flex overflow-hidden flex-col text-left max-w-full px-10 justify-evenly mx-auto items-center md:flex-row">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl hidden md:block md:top-40">
+        Experience
+      </h3>
       <div className="w-full flex space-x-5 overflow-x-scroll p-12 pb-[20px] mb-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#38598b]/40 md:p-10">
         <article className="flex flex-col rounded-lg  items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center p-10 bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 text-center overflow-hidden md:text-base">
           <div className="flex flex-col w-full items-center overflow-auto">
