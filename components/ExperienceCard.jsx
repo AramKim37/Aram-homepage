@@ -34,8 +34,10 @@ const ExperienceCard = () => {
               className="w-32 h-32 rounded-xl xl:w-[200px] xl:h-[200px] object-cover object-center"
             />
             <div className="flex flex-col items-center px-2 pt-5 md:px-10">
-              <h4 className="uppercase text-[12px]">Capstone Project</h4>
-              <p className="text-[12px]">SAIT</p>
+              <h4 className="uppercase text-[12px] md:text-base">
+                Capstone Project
+              </h4>
+              <p className="text-[12px] md:text-base">SAIT</p>
               <div className="flex space-x-2 my-2 ">
                 <Image src={React} alt="react" className="w-7 rounded-full" />
                 <Image src={MongoDB} alt="react" className="w-7 rounded-full" />
@@ -67,10 +69,12 @@ const ExperienceCard = () => {
               className="w-32 h-32 rounded-xl xl:w-[200px] xl:h-[200px] object-cover object-center"
             />
             <div className="flex flex-col items-center px-2 pt-5 md:px-10">
-              <h4 className="uppercase text-[12px]">
+              <h4 className="uppercase text-[12px] md:text-base">
                 Full Stack Development Program
               </h4>
-              <p className="text-[12px]">Harvest Talent Incubator with neo</p>
+              <p className="text-[12px] md:text-base">
+                Harvest Talent Incubator with neo
+              </p>
               <div className="flex space-x-2 my-2 ">
                 <Image src={React} alt="react" className="w-7 rounded-full" />
                 <Image src={MongoDB} alt="react" className="w-7 rounded-full" />
