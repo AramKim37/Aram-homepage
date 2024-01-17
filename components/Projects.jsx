@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { projectItems } from "@/data/data.js";
 
 const Projects = () => {
+  console.log(projectItems.img);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -16,11 +17,9 @@ const Projects = () => {
       <h3 className="absolute top-24 text-gray-500 tracking-[20px] text-2xl uppercase">
         Projects
       </h3>
-      {projectItems.map((item, id) => (
-        <div key="id">{item.title}</div>
-      ))}
-      {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden z-20 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#38598b]/40">
-        {Items..map((project, i) => (
+
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden z-20 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#38598b]/40">
+        {projectItems.map((project, i) => (
           <div
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44"
@@ -30,12 +29,12 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
               viewport={{ once: true }}
-              src={BootCamp.src}
+              src={project.img}
               alt="bootcamp"
             />
             <div className="space-y-10 px-10 md:px-10 max-w-6xl">
               <h4 className="text-center font-semibold text-4xl">
-                Case Study {i + 1} of {projects.length}: UPS clone
+                Case Study {i + 1} of {projectItems.length}: {project.title}
               </h4>
               <p className="text-lg text-center md:text-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
@@ -46,7 +45,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
       <motion.div
         initial={{ opacity: 0, x: 500 }}
         whileInView={{ opacity: 1, x: 0 }}
