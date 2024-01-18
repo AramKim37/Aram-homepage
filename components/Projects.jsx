@@ -31,17 +31,15 @@ const Projects = () => {
               viewport={{ once: true }}
               src={project.img}
               alt="bootcamp"
+              className="h-[400px] w-[500px]"
             />
+            <p className="md:text-lg text-center md:text-left">
+              {project.desc}
+            </p>
             <div className="space-y-10 px-10 md:px-10 max-w-6xl">
-              <h4 className="text-center font-semibold text-4xl">
+              <h4 className="text-center font-semibold md:text-4xl">
                 Case Study {i + 1} of {projectItems.length}: {project.title}
               </h4>
-              <p className="text-lg text-center md:text-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                illum dignissimos libero modi? Id delectus tempore libero omnis
-                earum perferendis sequi? Velit ullam quae aut perferendis
-                voluptatem, tempora obcaecati amet?
-              </p>
             </div>
           </div>
         ))}

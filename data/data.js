@@ -1,9 +1,9 @@
 export const projectItems = [
   {
     id: "1",
-    title: "Expense Tracker",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum dignissimos libero modi? Id delectus tempore libero omnis earum perferendis sequi? Velit ullam quae aut perferendis voluptatem, tempora obcaecati amet?",
-    img: "/image/expense.png",
+    title: "Soap Website",
+    desc: "This is Capstone Project at SAIT. Utilzing with React, Node, Express, and MongoDB(MERN Stack). Also, build payment system using Stripe.",
+    img: "/image/soap.png",
   },
   {
     id: "2",
@@ -13,20 +13,20 @@ export const projectItems = [
   },
   {
     id: "3",
-    title: "Expense Tracker",
+    title: "Todo List",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum dignissimos libero modi? Id delectus tempore libero omnis earum perferendis sequi? Velit ullam quae aut perferendis voluptatem, tempora obcaecati amet?",
-    img: "/image/expense.png",
+    img: "/image/todo.png",
   },
   {
     id: "4",
-    title: "Expense Tracker",
+    title: "Paint",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum dignissimos libero modi? Id delectus tempore libero omnis earum perferendis sequi? Velit ullam quae aut perferendis voluptatem, tempora obcaecati amet?",
-    img: "/image/expense.png",
+    img: "/image/paint.png",
   },
   {
     id: "5",
-    title: "Expense Tracker",
+    title: "Weather",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum dignissimos libero modi? Id delectus tempore libero omnis earum perferendis sequi? Velit ullam quae aut perferendis voluptatem, tempora obcaecati amet?",
-    img: "/image/expense.png",
+    img: "/image/weather.png",
   },
 ];
