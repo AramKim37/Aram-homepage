@@ -10,6 +10,7 @@
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-1 py-4 border-[#242424]  text-gray-500 placeholder-gray-500 transition-all focus:border-[#a2a8d3]/40 text-[14px] md:px-16 md:py-8 
     focus:text-[#4e6187];
   }
+
   .background {
     /* background: linear-gradient(-45deg, #8691b3, #edeef3); */
     @apply bg-[#1B1B1B];

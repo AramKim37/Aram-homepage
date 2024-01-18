@@ -44,7 +44,7 @@ const ExperienceCard = () => {
                 <Image src={Nodejs} alt="react" className="w-7 rounded-full" />
               </div>
               <p className="uppercase py-5 text-gray-300">2021</p>
-              <ul className="list-disc space-y-4 ml-5 md:text-lg text-left">
+              <ul className="text-[12px] list-disc space-y-4 ml-5 md:text-lg text-left">
                 <li>Brainstorm innovative ideas for the project</li>
                 <li>Iplement payment system(stripe)</li>
                 <li>Works closely with the project team</li>
@@ -87,7 +87,7 @@ const ExperienceCard = () => {
                 <Image src={GraphQl} alt="react" className="w-7 rounded-full" />
               </div>
               <p className="uppercase py-5 text-gray-300">2022</p>
-              <ul className="list-disc space-y-4 ml-5 md:text-lg text-left">
+              <ul className="text-[12px] list-disc space-y-4 ml-5 md:text-lg text-left">
                 <li>Advance creativity</li>
                 <li>Improved Problem-solving skills</li>
                 <li>Experience Jest test</li>
