@@ -8,7 +8,7 @@ import Mail from "@/public/image/mail.svg";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 p-5 flex items-center justify-around mx-auto max-w-7xl z-20">
+    <header className="p-5 flex items-center justify-around mx-auto w-full bg-transparent z-20">
       <motion.div
         initial={{
           x: -500,

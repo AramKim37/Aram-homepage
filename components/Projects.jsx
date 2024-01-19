@@ -32,15 +32,15 @@ const Projects = () => {
                 viewport={{ once: true }}
                 src={project.img}
                 alt="bootcamp"
-                className="w-[500px] h-[500px] object-cover block"
+                className="w-[300px] h-[300px] object-cover"
               />
-              <div className="absolute left-0 w-full h-full bg-black bg-opacity-70 opacity-0 flex flex-col items-center justify-end transition-opacity duration-300 hover:opacity-100">
-                <p className="md:text-lg text-center md:text-left ">
-                  {project.desc}
-                  <button>Go</button>
-                </p>
-              </div>
+
+              <p className="md:text-lg text-center md:text-left flex flex-col ">
+                {project.desc}
+                <button className="">exproler</button>
+              </p>
             </div>
+
             <div className="space-y-10 px-10 md:px-10 max-w-6xl">
               <h4 className="text-center font-semibold md:text-4xl">
                 Case Study {i + 1} of {projectItems.length}: {project.title}
@@ -53,13 +53,13 @@ const Projects = () => {
         initial={{ opacity: 0, x: 500 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.5 }}
-        className="w-[100%] absolute top-[30%] bg-gray-500 left-0 h-[500px] -skew-y-12"
+        className="w-[100%] absolute top-[50%] bg-gray-500 left-0 h-[300px] -skew-y-12"
       />
       <motion.div
         initial={{ opacity: 0, x: -500 }}
         whileInView={{ opacity: 1, x: 500 }}
         transition={{ duration: 1.5 }}
-        className="w-[100%] absolute top-[30%] bg-gray-500 left-0 h-[500px] -skew-y-12"
+        className="w-[100%] absolute top-[50%] bg-gray-500 left-0 h-[300px] -skew-y-12"
       />
     </motion.div>
   );
