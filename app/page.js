@@ -9,14 +9,14 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Home() {
   return (
-    <main className="w-full text-white min-h-screen">
+    <main className="w-full flex flex-col justify-center items-center text-white min-h-screen">
       <div>
         <Hero />
         <About />
-        <WorkExperience />
+        {/* <WorkExperience />
         <Projects />
         <Skills />
-        <Contact />
+        <Contact /> */}
       </div>
     </main>
   );

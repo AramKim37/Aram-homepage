@@ -10,9 +10,14 @@ import Resume from "@/public/image/resume.png";
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="w-full min-h-screen p-10">
-      <h1 className="p-5 uppercase text-center">About</h1>
-      <div className="flex flex-col md:flex-row space-x-10">
+    <div
+      id="about"
+      className="flex flex-col h-screen space-y-4 items-center justify-center text-center p-10 "
+    >
+      <h1 className="pt-10 pb-20 uppercase text-center tracking-[20px]  text-gray-500 text-2xl 2xl:text-4xl">
+        About
+      </h1>
+      <div className="flex flex-col md:flex-row md:space-x-10">
         <motion.img
           initial={{
             x: -200,
@@ -25,11 +30,13 @@ const About = () => {
           }}
           viewport={{ once: true }}
           src={Aram.src}
-          className="flex basis-1/2 pt-2 md:mb-0 flex-shrink-0 w-44 h-44 rounded-xl object-cover md:rounded-lg md:w-[300px] md:h-[400px] xl:w-[500px] xl:h-[500px]"
+          className="flex mx-auto basis-1/2 pt-2 md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[550px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
         />
-        <div className="flex flex-col justify-between space-y-10">
-          <h3 className="text-3xl">Who I am</h3>
-          <p className="text-sm md:text-2xl">
+        <div className="flex flex-col md:justify-between space-y-10">
+          <h3 className="flex mx-auto text-2xl text-center text-gray-500 md:text-left md:mx-0 md:pt-10 md:text-2xl 2xl:text-4xl">
+            Who I am
+          </h3>
+          <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
             Graduate of the Southern Alberta Institute of Technology in the
             information Technology - Software Development Program. Since I
             started studying computer science, I am always passionate and
@@ -43,7 +50,7 @@ const About = () => {
               fgColor="#64748b"
               bgColor="transparent"
               target="_blank"
-              style={{ width: 40, height: 40 }}
+              style={{ width: 60, height: 60 }}
               className="hover:bg-white hover:rounded-xl"
             />
             <SocialIcon
@@ -51,7 +58,7 @@ const About = () => {
               fgColor="#64748b"
               bgColor="transparent"
               target="_blank"
-              style={{ width: 40, height: 40 }}
+              style={{ width: 60, height: 60 }}
               className="hover:bg-white hover:rounded-xl"
             />
             <a href="/image/Aram_Resume.pdf" download className="relative">
@@ -68,7 +75,7 @@ const About = () => {
                   alt="resume"
                   width={100}
                   height={100}
-                  className="absolute object-cover rounded-xl max-[370px]:hidden  md:block"
+                  className="absolute object-cover rounded-xl left-[120px] -top-7 "
                 />
               )}
             </a>
