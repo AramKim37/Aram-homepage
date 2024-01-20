@@ -35,3 +35,46 @@ export const projectItems = [
     img: "/image/weather.png",
   },
 ];
+
+export const experienceCard = [
+  {
+    id: "1",
+    title: "Castone Project",
+    desc: [
+      {
+        li1: "Brainstorm innovative ideas for the project",
+        li2: "Implement payment system(stripe)",
+        li3: "Works closely with the project team",
+        li4: "Collaborate with Github",
+      },
+    ],
+    img: [
+      {
+        react: "/image/react.svg",
+        node: "/image/node.svg",
+        db: "/image/mongodb.svg",
+      },
+    ],
+  },
+  {
+    id: "2",
+    title: "Full Stack Development Program",
+    desc: [
+      {
+        li1: "Advance creativity",
+        li2: "Improved Problem-solving skills",
+        li3: "Experience Jest test",
+        li4: "Real Industrial workflow experience",
+      },
+    ],
+    img: [
+      {
+        react: "/image/react.svg",
+        graphql: "/image/graphql.svg",
+        db: "/image/mongodb.svg",
+        typescript: "/image/typescript.svg",
+        jest: "/image/jest.svg",
+      },
+    ],
+  },
+];
