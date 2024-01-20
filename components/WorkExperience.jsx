@@ -17,13 +17,14 @@ const WorkExperience = () => {
         <div>
           {experienceCard.map((item) => (
             <div key={item.id}>
-              <div>
+              <div className="">
                 <Image
                   src={item.image}
                   alt="capstone"
                   width={70}
                   height={70}
-                  className="object-cover"
+                  objectFit="cover"
+                  className="w-[300px] h-[300px] object-center object-cover"
                 />
               </div>
               <h1>{item.title}</h1>
