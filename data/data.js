@@ -48,7 +48,8 @@ export const experienceCard = [
         li4: "Collaborate with Github",
       },
     ],
-    img: [
+    image: "/image/capstone.png",
+    icons: [
       {
         react: "/image/react.svg",
         node: "/image/node.svg",
@@ -67,7 +68,8 @@ export const experienceCard = [
         li4: "Real Industrial workflow experience",
       },
     ],
-    img: [
+    image: "/image/bootcamp.png",
+    icons: [
       {
         react: "/image/react.svg",
         graphql: "/image/graphql.svg",
