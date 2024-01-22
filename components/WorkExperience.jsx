@@ -7,7 +7,7 @@ import Image from "next/image";
 const WorkExperience = () => {
   return (
     <div className="w-max-full flex flex-col items-center mx-auto p-20">
-      <h1 className="uppercase tracking-[20px] text-gray-500 text-2xl p-10">
+      <h1 className="uppercase tracking-[20px] font-extrabold text-gray-500 text-2xl p-10">
         experience
       </h1>
       <div className="flex flex-col md:flex-row items-center gap-20">

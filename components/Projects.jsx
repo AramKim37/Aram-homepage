@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
-import BootCamp from "@/public/image/bootcamp.png";
 import { motion } from "framer-motion";
 import { projectItems } from "@/data/data.js";
 
@@ -13,47 +11,55 @@ const Projects = () => {
 
   const cardVariant = {
     expanded: {
-      width: "400px",
+      width: "500px",
     },
     collapsed: {
       width: "200px",
     },
   };
   return (
-    <section className="py-16 pb-[300px] bg-gradient-to-r from-purple-800 to-indigo-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-extrabold text-white">
-          Featured Projects
+    <section className="py-16 flex flex-col w-fullb">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
+        <h1 className="text-2xl 2xl:text-4xl font-extrabold text-center text-gray-500 tracking-[20px] uppercase">
+          Projects
         </h1>
-        <p className="mt-4 text-xl text-gray-300">check out our latest works</p>
+        <p className="mt-4 text-xl text-gray-500 text-center">
+          check out our latest works
+        </p>
       </div>
-      <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-5">
+      <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-5 bg-[#212121] rounded-xl p-10">
         {projectItems.map((index) => (
-          <motion.div
-            key={index}
-            className={`card cursor-pointer h-[500px] bg-cover bg-center rounded-[20px] ${
-              index === expandedCard ? "expanded" : ""
-            }`}
-            variants={cardVariant}
-            initial="collapsed"
-            animate={index === expandedCard ? "expanded" : "collapsed"}
-            transition={{ duration: 1.5 }}
-            onClick={() => handleCard(index)}
-            style={{
-              backgroundImage: `url(${index.img})`,
-            }}
-          >
-            <div className="card-content h-full flex flex-col justify-end">
-              <div className="card-footer rounded-b-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
-                <h2 className="text-xl font-semibold text-white text-center">
-                  {index.title}
-                </h2>
-                {index === expandedCard && (
-                  <p className="mt-2 text-gray-300 text-center">{index.desc}</p>
-                )}
+          <div key={index} className="border-slate-400 border-2 rounded-[20px]">
+            <motion.div
+              key={index}
+              className={`cursor-pointer h-[400px] bg-cover bg-center bg-blue-400 rounded-[20px] ${
+                index === expandedCard ? "expanded" : ""
+              }`}
+              variants={cardVariant}
+              initial={{ skewX: 100, opacity: 0 }}
+              whileInView={{ skewX: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              animate={index === expandedCard ? "expanded" : "collapsed"}
+              transition={{ duration: 1.5 }}
+              onClick={() => handleCard(index)}
+              style={{
+                backgroundImage: `url(${index.img})`,
+              }}
+            >
+              <div className="card-content h-full flex flex-col justify-end">
+                <div className="card-footer rounded-b-[20px] rounded-t-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
+                  <h2 className="text-xl font-semibold text-white text-center">
+                    {index.title}
+                  </h2>
+                  {index === expandedCard && (
+                    <p className="mt-2 text-gray-300 text-center">
+                      {index.desc}
+                    </p>
+                  )}
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         ))}
       </div>
     </section>
