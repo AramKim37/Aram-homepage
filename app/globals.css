@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
   .heroButton {
     @apply px-4 py-1 my-3 border border-[#242424] rounded-full uppercase text-[11px] border-transparent tracking-widest text-gray-500 transition-all hover:border-[#5aa5e6]/80 hover:text-[#5aa5e6] hover:font-bold hover:border-s-2 md:text-sm md:py-2;
   }
+
   .card {
     @apply shadow-[15px_15px_30px_rgb(25,25,25),15px_15px_20px_rgb(70,90,90)];
   }
