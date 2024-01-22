@@ -37,8 +37,8 @@ const Projects = () => {
                 index === expandedCard ? "expanded" : ""
               }`}
               variants={cardVariant}
-              initial={{ skewX: 300, opacity: 0 }}
-              whileInView={{ skewX: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               animate={index === expandedCard ? "expanded" : "collapsed"}
               transition={{ duration: 1 }}
@@ -49,16 +49,18 @@ const Projects = () => {
             >
               <div className="card-content h-full flex flex-col justify-end">
                 <div className="card-footer rounded-b-[20px]  bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
-                  <h2 className="text-xl font-semibold text-white text-center">
+                  <h2 className="text-xl font-extrabold text-white text-center m-2">
                     {index.title}
                   </h2>
                   {index === expandedCard && (
                     <div className="text-center">
-                      <p className="mt-2 text-gray-300 text-center">
+                      <p className="m-2 text-gray-200 text-center text-semibold p-2">
                         {index.desc}
                       </p>
                       <Link href={index.url} target="_blank">
-                        <button className="p-5 uppercase">exproler</button>
+                        <button className="px-5 py-1 m-2 text-gray-300 text-extrabold uppercase border-transparent rounded-full hover:border-2 hover:text-gray-500 hover:border-white hover:bg-white">
+                          exproler
+                        </button>
                       </Link>
                     </div>
                   )}
