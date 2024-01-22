@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { projectItems } from "@/data/data.js";
+import Link from "next/link";
 
 const Projects = () => {
   const [expandedCard, setExpandedCard] = useState(null);
@@ -18,7 +19,7 @@ const Projects = () => {
     },
   };
   return (
-    <section className="py-16 flex flex-col w-fullb">
+    <section className="py-16 flex flex-col w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
         <h1 className="text-2xl 2xl:text-4xl font-extrabold text-center text-gray-500 tracking-[20px] uppercase">
           Projects
@@ -36,25 +37,30 @@ const Projects = () => {
                 index === expandedCard ? "expanded" : ""
               }`}
               variants={cardVariant}
-              initial={{ skewX: 100, opacity: 0 }}
+              initial={{ skewX: 300, opacity: 0 }}
               whileInView={{ skewX: 0, opacity: 1 }}
               viewport={{ once: true }}
               animate={index === expandedCard ? "expanded" : "collapsed"}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 1 }}
               onClick={() => handleCard(index)}
               style={{
                 backgroundImage: `url(${index.img})`,
               }}
             >
               <div className="card-content h-full flex flex-col justify-end">
-                <div className="card-footer rounded-b-[20px] rounded-t-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
+                <div className="card-footer rounded-b-[20px]  bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
                   <h2 className="text-xl font-semibold text-white text-center">
                     {index.title}
                   </h2>
                   {index === expandedCard && (
-                    <p className="mt-2 text-gray-300 text-center">
-                      {index.desc}
-                    </p>
+                    <div className="text-center">
+                      <p className="mt-2 text-gray-300 text-center">
+                        {index.desc}
+                      </p>
+                      <Link href={index.url} target="_blank">
+                        <button className="p-5 uppercase">exproler</button>
+                      </Link>
+                    </div>
                   )}
                 </div>
               </div>
