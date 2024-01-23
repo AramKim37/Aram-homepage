@@ -6,22 +6,32 @@ import Image from "next/image";
 
 const WorkExperience = () => {
   return (
-    <div className="w-max-full flex flex-col items-center mx-auto p-20">
-      <h1 className="uppercase tracking-[20px] font-extrabold text-gray-500 text-2xl p-10">
+    <div className="w-max-full flex flex-col justify-center items-center mx-auto p-10 min-h-screen">
+      <h1 className="pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
         experience
       </h1>
       <div className="flex flex-col md:flex-row items-center gap-20">
         {experienceCard.map((card) => (
           <div key={card.id} className="w-full h-full">
             <div className="flex flex-col mx-auto items-center justify-evenly w-[400px] h-[400px] bg-[#212121] text-gray-500 rounded-xl card md:w-[500px] md:h-[500px]">
-              <Image
+              <motion.img
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 1.5 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 src={card.image}
                 width={150}
                 height={150}
                 alt="exp_image"
                 className="md:w-[300px] md:h-[200px] rounded-xl object-cover object-center"
               />
-              <div className="flex flex-col gap-5">
+              <motion.div
+                initial={{ opacity: 0, x: -300 }}
+                transition={{ duration: 1.5 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="flex flex-col gap-5"
+              >
                 <h3 className="text-center md:text-2xl">{card.title}</h3>
                 <div className="flex items-center justify-center gap-5">
                   {Object.entries(card.icons[0]).map(([key, value]) => (
@@ -41,7 +51,7 @@ const WorkExperience = () => {
                     </li>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         ))}
