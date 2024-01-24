@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import Hero from "./Hero";
 
 const Initial = () => {
   return (
@@ -12,19 +14,19 @@ const Initial = () => {
           engaging and delightful Tech experiences{" "}
         </span>
       </div>
-      <div className="light-button flex flex-col p-5">
-        <button className="bt">
-          <div className="light-holder">
-            <div className="dot"></div>
-            <div className="light"></div>
-          </div>
-          <div className="button-holder m-5">
-            <button className="uppercase text-2xl">explore</button>
-          </div>
-        </button>
+      <div className="light-button flex flex-col items-center p-5">
+        <Link href="/hero">
+          <button className="bt">
+            <div className="light-holder">
+              <div className="dot"></div>
+              <div className="light"></div>
+            </div>
+            <div className="button-holder m-5">
+              <p className="uppercase text-2xl">explore </p>
+            </div>
+          </button>
+        </Link>
       </div>
-
-      {/* <button className="flex justify-start">explore my world</button> */}
     </div>
   );
 };

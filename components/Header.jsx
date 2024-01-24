@@ -5,6 +5,8 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Mail from "@/public/image/mail.svg";
+import Image from "next/image";
+import Logo from "@/public/image/logo.svg";
 
 const Header = () => {
   return (
@@ -26,8 +28,8 @@ const Header = () => {
         className="flex flex-row items-center"
       >
         <Link href="#hero">
-          <h1 className="flex gap-2 uppercase md:inline-flex text-sm text-gray-400 md:text-m">
-            ARAM <span className="nameText">KIM</span>
+          <h1 className="flex gap-2 uppercase bg-transparent md:inline-flex text-sm text-gray-400 md:text-m">
+            <Image src={Logo} alt="logo" className="w-32 h-32 fill-[#e6e6e6]" />
           </h1>
         </Link>
         {/* Social Icons */}

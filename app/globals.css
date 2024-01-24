@@ -103,18 +103,22 @@
     background: transparent;
   }
   .light-button button.bt:hover .button-holder svg {
-    @apply fill-[rgba(88,101,242,1)];
+    /* @apply fill-[rgba(88,101,242,1)]; */
+    @apply fill-[#3168c0];
   }
   .light-button button.bt:hover .button-holder {
-    @apply text-[rgba(88,101,242,1)] outline-offset-2;
-    outline: rgba(88, 101, 242, 1) 2px solid;
+    /* @apply text-[rgba(88,101,242,1)] outline-offset-2; */
+    /* outline: rgba(88, 101, 242, 1) 2px solid; */
+    @apply text-[#6aa4e5] outline-offset-2;
+
+    outline: rgb(90, 157, 239) 2px solid;
   }
   .light-button button.bt:hover .light-holder .light {
     background: rgb(255, 255, 255);
     background: linear-gradient(
       180deg,
-      rgba(88, 101, 242, 1) 0%,
-      rgba(255, 255, 255, 0) 75%,
+      rgb(88, 173, 243) 0%,
+      /* rgba(88, 101, 242, 1) 0%, */ rgba(255, 255, 255, 0) 75%,
       rgba(255, 255, 255, 0) 100%
     );
   }
