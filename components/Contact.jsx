@@ -14,15 +14,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left max-w-7xl justify-center gap-5 mx-auto items-center md:gap-10">
-      <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl hidden md:block md:top-40">
-        Contact
-      </h3>
-      <div className="text-center">
-        <h4 className="text-m pt-[60px] text-gray-500/70 uppercase md:text-xl md:pt-0">
-          Let`s talk
-        </h4>
-      </div>
+    <div className="w-full m-h-screen items-center justify-center mx-auto">
+      <h1 className="text-2xl 2xl:text-4xl font-extrabold text-center text-gray-500 tracking-[20px] uppercase">
+        contact
+      </h1>
+      <p className="mt-4 text-xl text-gray-500 text-center">Let`s talk</p>
+
       <form
         className="flex flex-col gap-1 w-fit mx-auto md:px-10 md:py-10"
         onSubmit={handleSubmit(onSubmit)}

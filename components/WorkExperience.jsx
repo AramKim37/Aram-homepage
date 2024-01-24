@@ -6,14 +6,17 @@ import Image from "next/image";
 
 const WorkExperience = () => {
   return (
-    <div className="w-max-full flex flex-col justify-center items-center mx-auto p-10 min-h-screen">
+    <div
+      id="experience"
+      className="w-max-full flex flex-col justify-center items-center mx-auto p-10 min-h-screen"
+    >
       <h1 className="pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
         experience
       </h1>
       <div className="flex flex-col md:flex-row items-center gap-20">
         {experienceCard.map((card) => (
           <div key={card.id} className="w-full h-full">
-            <div className="flex flex-col mx-auto items-center justify-evenly w-[400px] h-[400px] bg-[#212121] text-gray-500 rounded-xl card md:w-[500px] md:h-[500px]">
+            <div className="flex flex-col mx-auto items-center justify-evenly w-[400px] h-[400px] bg-[#212121] text-gray-500 rounded-xl card ">
               <motion.img
                 initial={{ opacity: 0, y: -300 }}
                 transition={{ duration: 1.5 }}
@@ -23,7 +26,7 @@ const WorkExperience = () => {
                 width={150}
                 height={150}
                 alt="exp_image"
-                className="md:w-[300px] md:h-[200px] rounded-xl object-cover object-center"
+                className="md:w-[200px] md:h-[200px] p-5 rounded-xl object-cover object-center"
               />
               <motion.div
                 initial={{ opacity: 0, x: -300 }}

@@ -2,6 +2,7 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
+import Initial from "@/components/Initial";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
@@ -9,13 +10,14 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col justify-center items-center text-white">
+    <main className="">
       <div>
-        <Hero />
+        <Initial />
+        {/* <Hero />
         <About />
         <WorkExperience />
         <Projects />
-        {/* <Skills />
+        <Skills />
         <Contact /> */}
       </div>
     </main>

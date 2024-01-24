@@ -20,12 +20,15 @@ const Projects = () => {
   };
 
   return (
-    <section className="py-16 flex flex-col w-full items-center justify-center min-h-screen">
+    <section
+      id="projects"
+      className="py-16 flex flex-col w-full items-center justify-center min-h-screen"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
         <h1 className="text-2xl 2xl:text-4xl font-extrabold text-center text-gray-500 tracking-[20px] uppercase">
           Projects
         </h1>
-        <p className="mt-4 text-xl text-gray-500 text-center">
+        <p className="mt-4 text-xl text-gray-500 text-center pb-20">
           Click projects and echeck out latest works
         </p>
       </div>
