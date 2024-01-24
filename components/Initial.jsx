@@ -18,8 +18,8 @@ const Initial = () => {
             <div className="dot"></div>
             <div className="light"></div>
           </div>
-          <div className="button-holder uppercase">
-            <p>explore</p>
+          <div className="button-holder m-5">
+            <button className="uppercase text-2xl">explore</button>
           </div>
         </button>
       </div>
