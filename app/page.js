@@ -10,7 +10,7 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="w-full flex flex-col items-center justify-center min-h-screen">
       <div>
         <Initial />
         {/* <Hero />
