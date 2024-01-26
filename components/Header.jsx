@@ -7,16 +7,12 @@ import Link from "next/link";
 import Mail from "@/public/image/mail.svg";
 import Image from "next/image";
 import Logo from "@/public/image/logo.svg";
+import Hamburger from "@/public/image/hamburger.svg";
+import Xmark from "@/public/image/x.svg";
 
 const Header = () => {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const toggle = () => {
-    setIsClicked(!isClicked);
-  };
-
   return (
-    <header className="px-10 flex items-center justify-between mx-auto w-full bg-transparent z-20">
+    <header className="px-10 flex items-center justify-between mx-auto w-full">
       <motion.div
         initial={{
           x: -500,
@@ -33,7 +29,7 @@ const Header = () => {
         }}
         className="flex flex-row items-center"
       >
-        <Link href="#hero">
+        <Link href="/">
           <h1 className="flex gap-2 uppercase bg-transparent md:inline-flex text-sm text-gray-400 md:text-m">
             <Image src={Logo} alt="logo" className="w-20 h-20 fill-[#e6e6e6]" />
           </h1>
@@ -59,28 +55,19 @@ const Header = () => {
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
         <Link href="#contact">
-          <div className="flex space-x-3 items-center hover:animate-bounce">
+          <div className="space-x-3 items-center hover:animate-bounce md:flex">
             <motion.img
               whileHover={{ scale: 1.3 }}
               src={Mail.src}
               className="w-5 h-5"
             />
 
-            <p className="uppercase hidden text-sm md:inline-flex md:text-m text-gray-400">
+            <p className="hidden uppercase text-sm md:inline-flex md:text-m text-gray-400">
               Get In Touch
             </p>
           </div>
         </Link>
       </motion.div>
-      <ul className="text-gray-500 relative z-30 md:hidden">
-        <div className="fixed top-0 right-0 flex flex-col items-center justify-start gap-5 text-xl font-extrabold min-h-screen w-[250px] bg-black">
-          <li>About</li>
-          <li>Experience</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </div>
-      </ul>
     </header>
   );
 };
