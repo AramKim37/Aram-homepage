@@ -6,77 +6,84 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Resume from "@/public/image/resume.png";
+import SideBar from "@/components/SideBar";
 
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="flex flex-col space-y-4 items-center justify-center text-center p-10 min-h-screen">
-      <h1 className="pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
-        About
-      </h1>
-      <div className="flex flex-col md:flex-row md:space-x-10">
-        <motion.img
-          initial={{
-            x: -200,
-            opacity: 0,
-          }}
-          transition={{ duration: 1.5 }}
-          whileInView={{
-            x: 0,
-            opacity: 1,
-          }}
-          viewport={{ once: true }}
-          src={Aram.src}
-          className="flex mx-auto basis-1/2 pt-2 md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[550px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
-        />
-        <div className="flex flex-col md:justify-between space-y-10">
-          <h3 className="flex mx-auto text-2xl text-center text-gray-500 md:text-left md:mx-0 md:pt-10 md:text-2xl 2xl:text-4xl">
-            Who I am
-          </h3>
-          <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
-            Graduate of the Southern Alberta Institute of Technology in the
-            information Technology - Software Development Program. Since I
-            started studying computer science, I am always passionate and
-            motivated about coding. Also, I am very persistent and a lifelong
-            learner. So I am willing to learn new tech skills. In addtion, I am
-            a qualified developer with strong creative and analytical skills.
-          </p>
-          <div className="flex pt-5 items-center gap-5 justify-center md:justify-start">
-            <SocialIcon
-              url="https://www.linkedin.com/in/aram-kim/"
-              fgColor="#64748b"
-              bgColor="transparent"
-              target="_blank"
-              style={{ width: 60, height: 60 }}
-              className="hover:bg-white hover:rounded-xl"
-            />
-            <SocialIcon
-              url="https://github.com/AramKim37"
-              fgColor="#64748b"
-              bgColor="transparent"
-              target="_blank"
-              style={{ width: 60, height: 60 }}
-              className="hover:bg-white hover:rounded-xl"
-            />
-            <a href="/image/Aram_Resume.pdf" download className="relative">
-              <button
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                className="heroButton border-gray-500 font-bold hover:bg-white hover:animate-bounce hover:font-bold"
-              >
-                resume
-              </button>
-              {isHovered && (
-                <Image
-                  src={Resume}
-                  alt="resume"
-                  width={100}
-                  height={100}
-                  className="absolute object-cover rounded-xl left-[120px] -top-7 "
-                />
-              )}
-            </a>
+    <div className="flex w-full">
+      <div className="flex flex-col space-y-4 items-center justify-center text-center p-10 min-h-screen">
+        <h1 className="pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
+          About
+        </h1>
+        <div className="flex flex-col md:flex-row md:space-x-10">
+          <motion.img
+            initial={{
+              x: -200,
+              opacity: 0,
+            }}
+            transition={{ duration: 1.5 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
+            src={Aram.src}
+            className="flex mx-auto basis-1/2 pt-2 md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[550px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
+          />
+          <div className="flex flex-col md:justify-between space-y-10">
+            <h3 className="flex mx-auto text-2xl text-center text-gray-500 md:text-left md:mx-0 md:pt-10 md:text-2xl 2xl:text-4xl">
+              Who I am
+            </h3>
+            <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
+              Graduate of the Southern Alberta Institute of Technology in the
+              information Technology - Software Development Program. Since I
+              started studying computer science, I am always passionate and
+              motivated about coding. Also, I am very persistent and a lifelong
+              learner. So I am willing to learn new tech skills. In addtion, I
+              am a qualified developer with strong creative and analytical
+              skills.
+            </p>
+            <div className="flex pt-5 items-center gap-5 justify-center md:justify-start">
+              <SocialIcon
+                url="https://www.linkedin.com/in/aram-kim/"
+                fgColor="#64748b"
+                bgColor="transparent"
+                target="_blank"
+                style={{ width: 60, height: 60 }}
+                className="hover:bg-white hover:rounded-xl"
+              />
+              <SocialIcon
+                url="https://github.com/AramKim37"
+                fgColor="#64748b"
+                bgColor="transparent"
+                target="_blank"
+                style={{ width: 60, height: 60 }}
+                className="hover:bg-white hover:rounded-xl"
+              />
+              <a href="/image/Aram_Resume.pdf" download className="relative">
+                <button
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  className="heroButton border-gray-500 font-bold hover:bg-white hover:animate-bounce hover:font-bold"
+                >
+                  resume
+                </button>
+                {isHovered && (
+                  <Image
+                    src={Resume}
+                    alt="resume"
+                    width={100}
+                    height={100}
+                    className="absolute object-cover rounded-xl left-[120px] -top-7 "
+                  />
+                )}
+              </a>
+            </div>
           </div>
+        </div>
+        <div className=" flex w-full items-center justify-center">
+          <SideBar />
         </div>
       </div>
     </div>
