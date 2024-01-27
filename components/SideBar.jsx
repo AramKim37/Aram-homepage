@@ -9,9 +9,12 @@ import Image from "next/image";
 
 const SideBar = () => {
   return (
-    <div className="w-full flex items-center justify-center">
-      <div className="w-fit flex items-center justify-center gap-2 bg-slate-400">
-        <Image src={Home} alt="" width={40} height={40} />
+    <div className="">
+      <div className="w-fit flex md:flex-col items-center justify-center gap-2 bg-slate-400 p-2">
+        <div>
+          <Image src={Home} alt="" width={40} height={40} />
+          <span className="">HOME</span>
+        </div>
         <Image src={Experience} alt="" width={40} height={40} />
         <Image src={Projects} alt="" width={40} height={40} />
         <Image src={Skills} alt="" width={40} height={40} />

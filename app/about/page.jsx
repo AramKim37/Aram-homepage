@@ -13,10 +13,13 @@ const About = () => {
   return (
     <div className="flex w-full">
       <div className="flex flex-col space-y-4 items-center justify-center text-center p-10 min-h-screen">
-        <h1 className="pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
+        <h1 className="md:pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
           About
         </h1>
         <div className="flex flex-col md:flex-row md:space-x-10">
+          <div className="flex items-center justify-center pb-10 ml-0">
+            <SideBar />
+          </div>
           <motion.img
             initial={{
               x: -200,
@@ -81,9 +84,6 @@ const About = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className=" flex w-full items-center justify-center">
-          <SideBar />
         </div>
       </div>
     </div>
