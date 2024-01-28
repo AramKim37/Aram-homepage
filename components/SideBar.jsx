@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Home from "@/public/image/home.svg";
 import Experience from "@/public/image/experience.svg";
 import Projects from "@/public/image/projects.svg";
@@ -6,34 +6,31 @@ import Skills from "@/public/image/skills.svg";
 import About from "@/public/image/about.svg";
 import Contact from "@/public/image/contact.svg";
 import Image from "next/image";
+import Logo from "@/public/image/logo.svg";
+import Link from "next/link";
 
-const SideBar = () => {
+const SideBar = ({ isOpen }) => {
   return (
-    <div className="w-fit flex md:flex-col items-center justify-center gap-2 bg-slate-400 p-2">
-      <div className="">
-        <Image src={Home} alt="" width={40} height={40} />
-        <span className="">HOME</span>
-      </div>
-      <div>
-        <Image src={About} alt="" width={40} height={40} />
-        <span className="">About</span>
-      </div>{" "}
-      <div>
-        <Image src={Experience} alt="" width={40} height={40} />
-        <span className="">Experience</span>
-      </div>{" "}
-      <div>
-        <Image src={Projects} alt="" width={40} height={40} />
-        <span className="">Projects</span>
-      </div>{" "}
-      <div>
-        <Image src={Skills} alt="" width={40} height={40} />
-        <span className="">Skills</span>
-      </div>{" "}
-      <div>
-        <Image src={Contact} alt="" width={40} height={40} />
-        <span className="">Contact</span>
-      </div>
+    <div className="text-gray-500 uppercase relative">
+      {isOpen && (
+        <ul className="w-[150px] absolute top-0 right-0 p-5 bg-[#212121] rounded-sm shadow-lg shadow-indigo-500/50 flex flex-col gap-1 cursor-pointer">
+          <Link href="/">
+            <li>
+              <Image src={Logo} alt="logo" width={36} height={36} />
+            </li>
+          </Link>
+          <Link href="/hero">
+            <li className="hover:text-white">home</li>
+          </Link>
+          <Link href="/about">
+            <li className="hover:text-white">about</li>
+          </Link>
+          <li className="hover:text-white">experience</li>
+          <li className="hover:text-white">projects</li>
+          <li className="hover:text-white">skills</li>
+          <li className="hover:text-white">contact</li>
+        </ul>
+      )}
     </div>
   );
 };

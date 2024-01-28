@@ -7,19 +7,39 @@ import Link from "next/link";
 import { useState } from "react";
 import Resume from "@/public/image/resume.png";
 import SideBar from "@/components/SideBar";
+import Hamburger from "@/public/image/hamburger.svg";
 
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const isClicked = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div className="flex w-full">
+    <div className="flex w-full ralative">
+      <div className=" absolute top-0 right-0 p-5 flex items-center justify-center">
+        <div className="flex flex-col items-end justify-center">
+          <button
+            onClick={isClicked}
+            className="px-4 py-1 my-3 text-gray-500 rounded-sm uppercase  font-bold  hover:font-bold"
+          >
+            <Image src={Hamburger} width={32} height={32} alt="menu" />
+          </button>
+          <SideBar isOpen={isOpen} isClicked={isClicked} />
+        </div>
+      </div>
       <div className="flex flex-col space-y-4 items-center justify-center text-center p-10 min-h-screen">
-        <h1 className="md:pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
-          About
-        </h1>
+        <div className="flex ">
+          <h1 className="md:pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
+            About
+          </h1>
+          {/* <div>
+            <button onClick={isClicked}>Menu</button>
+            <SideBar isOpen={isOpen} isClicked={isClicked} />
+          </div> */}
+        </div>
         <div className="flex flex-col md:flex-row md:space-x-10">
-          <div className="flex items-center justify-center pb-10 ml-0">
-            <SideBar />
-          </div>
+          <div className="flex items-center justify-center pb-10 ml-0"></div>
           <motion.img
             initial={{
               x: -200,
