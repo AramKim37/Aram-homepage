@@ -25,10 +25,18 @@ const SideBar = ({ isOpen }) => {
           <Link href="/about">
             <li className="hover:text-white">about</li>
           </Link>
-          <li className="hover:text-white">experience</li>
-          <li className="hover:text-white">projects</li>
-          <li className="hover:text-white">skills</li>
-          <li className="hover:text-white">contact</li>
+          <Link href="/experience">
+            <li className="hover:text-white">experience</li>
+          </Link>
+          <Link href="/projects">
+            <li className="hover:text-white">projects</li>
+          </Link>
+          <Link href="/skills">
+            <li className="hover:text-white">skills</li>
+          </Link>
+          <Link href="/contact">
+            <li className="hover:text-white">contact</li>
+          </Link>
         </ul>
       )}
     </div>

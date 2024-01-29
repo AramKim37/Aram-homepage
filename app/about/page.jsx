@@ -33,10 +33,6 @@ const About = () => {
           <h1 className="md:pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
             About
           </h1>
-          {/* <div>
-            <button onClick={isClicked}>Menu</button>
-            <SideBar isOpen={isOpen} isClicked={isClicked} />
-          </div> */}
         </div>
         <div className="flex flex-col md:flex-row md:space-x-10">
           <div className="flex items-center justify-center pb-10 ml-0"></div>
