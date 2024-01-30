@@ -3,8 +3,15 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { projectItems } from "@/data/data.js";
 import Link from "next/link";
+import Image from "next/image";
+import SideBar from "@/components/SideBar";
+import Hamburger from "@/public/image/hamburger.svg";
 
 const Projects = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const isClicked = () => {
+    setIsOpen(!isOpen);
+  };
   const [expandedCard, setExpandedCard] = useState(null);
   const handleCard = (index) => {
     setExpandedCard(index === expandedCard ? -1 : index);
@@ -20,12 +27,23 @@ const Projects = () => {
   };
 
   return (
-    <section className="flex flex-col w-full items-center justify-center min-h-screen">
+    <section className="flex flex-col w-full items-center justify-center min-h-screen relative">
+      <div className=" absolute top-0 right-0 p-5 flex items-center justify-center">
+        <div className="flex flex-col items-end justify-center">
+          <button
+            onClick={isClicked}
+            className="px-4 py-1 my-3 text-gray-500 rounded-sm uppercase  font-bold  hover:font-bold"
+          >
+            <Image src={Hamburger} width={32} height={32} alt="menu" />
+          </button>
+          <SideBar isOpen={isOpen} isClicked={isClicked} />
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
         <h1 className="text-2xl 2xl:text-4xl font-extrabold text-center text-gray-500 tracking-[20px] uppercase">
           Projects
         </h1>
-        <p className="mt-4 text-xl text-gray-500 text-center pb-20">
+        <p className="mt-4 text-xl text-gray-500 text-center">
           Click projects and echeck out latest works
         </p>
       </div>

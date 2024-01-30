@@ -13,7 +13,7 @@ const WorkExperience = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="w-max-full flex flex-col justify-center items-center mx-auto p-10 min-h-screen relative">
+    <div className="w-max-full flex flex-col justify-center items-center mx-auto min-h-screen relative">
       <div className=" absolute top-0 right-0 p-5 flex items-center justify-center">
         <div className="flex flex-col items-end justify-center">
           <button
@@ -25,7 +25,7 @@ const WorkExperience = () => {
           <SideBar isOpen={isOpen} isClicked={isClicked} />
         </div>
       </div>
-      <h1 className="pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
+      <h1 className="md:pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
         experience
       </h1>
       <div className="flex flex-col md:flex-row items-center gap-20">
