@@ -29,7 +29,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col space-y-4 items-center justify-center text-center p-10 min-h-screen">
-        <div className="flex ">
+        <div className="flex">
           <h1 className="md:pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
             About
           </h1>

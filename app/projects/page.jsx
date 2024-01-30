@@ -49,7 +49,7 @@ const Projects = () => {
       </div>
       <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-5 bg-[#212121] rounded-xl p-10">
         {projectItems.map((index) => (
-          <div key={index} className="">
+          <div key={index} className="w-full">
             <motion.div
               key={index}
               className={`cursor-pointer h-[400px] bg-cover bg-center bg-blue-400 rounded-[20px] ${
