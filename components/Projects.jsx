@@ -12,7 +12,7 @@ const Projects = () => {
 
   const cardVariant = {
     expanded: {
-      width: "500px",
+      width: "400px",
     },
     collapsed: {
       width: "200px",
