@@ -16,7 +16,7 @@ const WorkExperience = () => {
       <div className="flex flex-col md:flex-row items-center gap-20">
         {experienceCard.map((card) => (
           <div key={card.id} className="w-full h-full">
-            <div className="flex flex-col mx-auto items-center justify-evenly w-[400px] h-[400px] bg-[#212121] text-gray-500 rounded-xl card ">
+            <div className="flex flex-col mx-auto items-center justify-evenly w-[300px] h-auto md:w-[400px] md:h-[400px] bg-[#212121] text-gray-500 rounded-xl card ">
               <motion.img
                 initial={{ opacity: 0, y: -300 }}
                 transition={{ duration: 1.5 }}
@@ -26,7 +26,7 @@ const WorkExperience = () => {
                 width={150}
                 height={150}
                 alt="exp_image"
-                className="md:w-[200px] md:h-[200px] p-5 rounded-xl object-cover object-center"
+                className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] p-5 rounded-xl object-cover object-center"
               />
               <motion.div
                 initial={{ opacity: 0, x: -300 }}
@@ -35,21 +35,24 @@ const WorkExperience = () => {
                 viewport={{ once: true }}
                 className="flex flex-col gap-5"
               >
-                <h3 className="text-center md:text-2xl">{card.title}</h3>
+                <h3 className="text-center text-[12px] md:text-2xl">
+                  {card.title}
+                </h3>
                 <div className="flex items-center justify-center gap-5">
                   {Object.entries(card.icons[0]).map(([key, value]) => (
                     <Image
                       key={key}
                       src={value}
                       alt="icons"
-                      width={24}
-                      height={24}
+                      width={12}
+                      height={12}
+                      className="md:w-[24px] md:h-[24px]"
                     />
                   ))}
                 </div>
-                <div className="w-[400px] flex flex-col justify-start">
+                <div className="w-full flex flex-col md:justify-start">
                   {Object.entries(card.desc[0]).map(([key, value]) => (
-                    <li className="md:text-[20px]" key={key}>
+                    <li className="text-[12px] md:text-[20px]" key={key}>
                       {value}
                     </li>
                   ))}

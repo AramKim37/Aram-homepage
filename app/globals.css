@@ -74,6 +74,24 @@
     -webkit-text-fill-color: transparent;
   }
 
+  @media (min-width: 600px) {
+    .expanded {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .expanded {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .expanded {
+      width: 50%;
+    }
+  }
+
   /*
   Based on TailwindCSS recommendations,
   consider using classes instead of the `@apply` directive
