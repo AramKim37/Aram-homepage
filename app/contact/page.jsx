@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import Hamburger from "@/public/image/hamburger.svg";
 import { useState } from "react";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,6 +80,7 @@ const Contact = () => {
           </button>
         </div>
       </form>
+      <Footer />
     </div>
   );
 };

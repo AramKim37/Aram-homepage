@@ -5,11 +5,14 @@ import WorkExperience from "@/components/WorkExperience";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
-    <div className="min-h-screen snap-y snap-mandatory overflow-scroll">
-      {/* <section className="snap-center">
+    <div className="h-screen snap-y snap-mandatory overflow-scroll">
+      <Header />
+      <section className="snap-center">
         <Hero />
       </section>
       <section className="snap-center">
@@ -26,7 +29,7 @@ const page = () => {
       </section>
       <section className="snap-center">
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 };

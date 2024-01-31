@@ -20,6 +20,7 @@ const Hero = () => {
   });
   return (
     <div className="w-full">
+      <Header />
       <div className="h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden md:space-y-8">
         <BackgroundCircles />
 

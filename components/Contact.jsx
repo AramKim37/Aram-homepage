@@ -1,5 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
+import Footer from "./Footer";
 
 const Contact = () => {
   const {
@@ -60,6 +61,7 @@ const Contact = () => {
           </button>
         </div>
       </form>
+      <Footer />
     </div>
   );
 };

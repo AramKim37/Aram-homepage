@@ -16,15 +16,21 @@ export default function Home() {
     const loader = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 50000);
+      }, 100000);
     };
     loader();
   }, []);
 
   return (
-    <main className="w-full flex flex-col items-center justify-center min-h-screen snap-y snap-mandatory overflow-scroll">
-      {isLoading ? <Initial /> : <Hero />}
-      {/* <Initial /> */}
+    <main className="w-full flex flex-col items-center justify-center h-screen snap-y snap-mandatory overflow-scroll">
+      {isLoading ? (
+        <div className="snap-center">
+          <Initial />
+        </div>
+      ) : (
+        <Hero />
+      )}
+
       {/* <Hero />
         <About />
         <WorkExperience />
