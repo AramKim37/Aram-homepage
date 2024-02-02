@@ -16,27 +16,39 @@ export default function Home() {
     const loader = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 100000);
+      }, 1000);
     };
     loader();
   }, []);
 
   return (
-    <main className="w-full flex flex-col items-center justify-center h-screen snap-y snap-mandatory overflow-scroll">
+    <main className="w-full flex flex-col items-center justify-center min-h-screen snap-y snap-mandatory overflow-scroll z-0">
       {isLoading ? (
         <div className="snap-center">
           <Initial />
         </div>
       ) : (
-        <Hero />
-      )}
-
-      {/* <Hero />
-        <About />
-        <WorkExperience />
-        <Projects />
+        <>
+          <section id="hero" className="w-full">
+            <Hero />
+          </section>
+          <section>
+            <About />
+          </section>
+          <section>
+            <WorkExperience />
+          </section>
+          <section>
+            <Projects />
+          </section>
+          {/* <section className="snap-center">
         <Skills />
-        <Contact /> */}
+      </section> */}
+          <section>
+            <Contact />
+          </section>
+        </>
+      )}
     </main>
   );
 }

@@ -17,7 +17,7 @@
     @apply shadow-[15px_15px_30px_rgb(25,25,25),15px_15px_20px_rgb(70,90,90)];
   }
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]  text-gray-500 placeholder-gray-500 transition-all focus:border-[#a2a8d3]/40 text-[14px] md:px-16 md:py-8 
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-2 py-4 border-[#242424]  text-gray-500 placeholder-gray-500 transition-all focus:border-[#a2a8d3]/40 text-[14px] md:px-16 md:py-8 
     focus:text-[#4e6187];
   }
 

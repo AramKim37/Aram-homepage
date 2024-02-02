@@ -52,7 +52,7 @@ const WorkExperience = () => {
                 </div>
                 <div className="w-full flex flex-col md:justify-start">
                   {Object.entries(card.desc[0]).map(([key, value]) => (
-                    <li className="text-[12px] md:text-[20px]" key={key}>
+                    <li className="text-[12px] md:text-[18px]" key={key}>
                       {value}
                     </li>
                   ))}
