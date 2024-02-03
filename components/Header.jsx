@@ -29,7 +29,7 @@ const Header = () => {
         }}
         className="flex flex-row items-center"
       >
-        <Link href="/">
+        <Link href="#initial">
           <h1 className="flex gap-2 uppercase bg-transparent md:inline-flex text-sm text-gray-400 md:text-m">
             <Image src={Logo} alt="logo" className="w-20 h-20 fill-[#e6e6e6]" />
           </h1>

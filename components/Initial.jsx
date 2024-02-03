@@ -7,7 +7,10 @@ import Image from "next/image";
 
 const Initial = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center text-white px-10 min-h-screen ">
+    <div
+      id="initial"
+      className="w-full flex flex-col justify-center items-center text-white px-10 min-h-screen "
+    >
       <motion.div
         initial={{ scale: 0.4, y: 500 }}
         animate={{ opacity: 0, scale: 10, y: 400 }}
@@ -55,7 +58,7 @@ const Initial = () => {
         whileInView={{ opacity: 1, x: 0 }}
         className="light-button flex flex-col items-center p-5"
       >
-        <Link href="/hero">
+        {/* <Link href="#hero">
           <button className="bt">
             <div className="light-holder">
               <div className="dot"></div>
@@ -65,7 +68,7 @@ const Initial = () => {
               <p className="uppercase text-2xl">explore </p>
             </div>
           </button>
-        </Link>
+        </Link> */}
       </motion.div>
     </div>
   );
