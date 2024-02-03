@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Initial from "@/components/Initial";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Topbar from "@/components/TopBar";
 import WorkExperience from "@/components/WorkExperience";
 import { useEffect, useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
@@ -16,19 +17,20 @@ export default function Home() {
     const loader = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 5000);
+      }, 50000);
     };
     loader();
   }, []);
 
   return (
-    <main className="w-full flex flex-col items-center justify-center min-h-screen snap-y snap-mandatory overflow-scroll z-0">
-      {isLoading ? (
+    <main className="w-full flex flex-col items-center justify-center min-h-screen">
+      {/* {isLoading ? (
         <div className="snap-center">
           <Initial />
         </div>
       ) : (
         <>
+          <Topbar />
           <section id="hero" className="w-full">
             <Hero />
           </section>
@@ -41,14 +43,14 @@ export default function Home() {
           <section>
             <Projects />
           </section>
-          {/* <section className="snap-center">
+          <section className="snap-center">
         <Skills />
-      </section> */}
+      </section>
           <section>
             <Contact />
           </section>
         </>
-      )}
+      )} */}
     </main>
   );
 }
