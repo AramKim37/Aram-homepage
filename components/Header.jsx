@@ -13,25 +13,35 @@ import { IoMoonOutline, IoCloseOutline } from "react-icons/io5";
 import { CgMenuRight } from "react-icons/cg";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header className="relative p-10 w-full h-auto flex bg-white">
       <div className="w-full flex flex-col md:flex-row items-center justify-between">
         <Image src={Logo} width={80} height={80} alt="logo" />
-        <ul className="flex flex-col md:flex-row items-center gap-5 text-gray-500">
+        <ul className="hidden md:flex md:flex-row items-center gap-5 text-gray-500">
           <li>Home</li>
           <li>About Me</li>
           <li>Projects</li>
           <li>Testominal</li>
           <li>contact</li>
         </ul>
+        <div className={isOpen ? "hidden" : "block"}>
+          <ul className="md:hidden flex justify-center flex-col items-center gap-5 text-gray-500">
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Projects</li>
+            <li>Testominal</li>
+            <li>contact</li>
+          </ul>
+        </div>
       </div>
-      <div className="absolute top-10 right-10">
-        <div>
-          <IoCloseOutline />
-        </div>
-        <div>
-          <CgMenuRight />
-        </div>
+      <div className="md:hidden">
+        <button onClick={toggle} className="">
+          {isOpen ? <CgMenuRight /> : <IoCloseOutline />}
+        </button>
       </div>
     </header>
     // <header className="px-10 flex items-center justify-between mx-auto w-full">
