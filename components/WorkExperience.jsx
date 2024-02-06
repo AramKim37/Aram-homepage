@@ -10,7 +10,7 @@ const WorkExperience = () => {
       id="experience"
       className="w-max-full flex flex-col justify-center items-center mx-auto p-10 min-h-screen"
     >
-      <h1 className="pb-20 uppercase text-center tracking-[20px] font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
+      <h1 className="pb-20 uppercase text-center font-extrabold text-gray-500 text-xl 2xl:text-4xl">
         experience
       </h1>
       <div className="flex flex-col md:flex-row items-center gap-20">
