@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="w-full flex flex-col items-center justify-center min-h-screen">
       <Topbar />
-      <section id="hero" className="">
+      <section id="hero" className="w-full">
         <Hero />
       </section>
       <section>
