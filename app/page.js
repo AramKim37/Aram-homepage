@@ -13,44 +13,27 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const loader = () => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 50000);
-    };
-    loader();
-  }, []);
-
   return (
     <main className="w-full flex flex-col items-center justify-center min-h-screen">
-      {/* {isLoading ? (
-        <div className="snap-center">
-          <Initial />
-        </div>
-      ) : (
-        <>
-          <Topbar />
-          <section id="hero" className="w-full">
-            <Hero />
-          </section>
-          <section>
-            <About />
-          </section>
-          <section>
-            <WorkExperience />
-          </section>
-          <section>
-            <Projects />
-          </section>
-          <section className="snap-center">
+      <Topbar />
+      <section id="hero" className="">
+        <Hero />
+      </section>
+      <section>
+        <About />
+      </section>
+      <section>
+        <WorkExperience />
+      </section>
+      <section>
+        <Projects />
+      </section>
+      <section className="">
         <Skills />
       </section>
-          <section>
-            <Contact />
-          </section>
-        </>
-      )} */}
+      <section>
+        <Contact />
+      </section>
     </main>
   );
 }

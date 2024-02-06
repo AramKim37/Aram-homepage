@@ -10,9 +10,9 @@ const Topbar = () => {
   return (
     <nav>
       <a
-        href="#home"
-        onClick={() => setActiveNav("#home")}
-        className={activeNav === "#home" ? "active" : ""}
+        href="#hero"
+        onClick={() => setActiveNav("#hero")}
+        className={activeNav === "#hero" ? "active" : ""}
       >
         <AiOutlineHome />
       </a>
@@ -31,9 +31,9 @@ const Topbar = () => {
         <BiBook />
       </a>
       <a
-        href="#portfolio"
-        onClick={() => setActiveNav("#portfolio")}
-        className={activeNav === "#portfolio" ? "active" : ""}
+        href="#projects"
+        onClick={() => setActiveNav("#projects")}
+        className={activeNav === "#projects" ? "active" : ""}
       >
         <RiServiceLine />
       </a>

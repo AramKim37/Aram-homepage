@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <div
       id="#hero"
-      className="w-full h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden md:space-y-8"
+      className="w-full min-h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden md:space-y-8"
     >
       <BackgroundCircles />
       <motion.img
