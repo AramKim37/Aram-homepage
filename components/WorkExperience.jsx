@@ -8,7 +8,7 @@ const WorkExperience = () => {
   return (
     <div
       id="experience"
-      className="w-max-full flex flex-col justify-center items-center mx-auto p-10 min-h-screen"
+      className="w-max-full flex flex-col justify-center items-center mx-auto  "
     >
       <h1 className="pb-20 uppercase text-center font-extrabold text-gray-500 text-xl 2xl:text-4xl">
         experience
@@ -19,22 +19,23 @@ const WorkExperience = () => {
             <div className="flex flex-col mx-auto items-center justify-evenly w-[300px] h-auto md:w-[400px] md:h-[400px] bg-[#212121] text-gray-500 rounded-xl card ">
               <motion.img
                 initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 1 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 src={card.image}
-                width={150}
-                height={150}
+                width={100}
+                height={100}
                 alt="exp_image"
-                className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] p-5 rounded-xl object-cover object-center"
+                className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] p-5 rounded-full object-cover object-center"
               />
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, x: -300 }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 1 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 className="flex flex-col gap-5"
-              >
+              > */}
+              <div>
                 <h3 className="text-center text-[12px] md:text-2xl">
                   {card.title}
                 </h3>
@@ -46,7 +47,7 @@ const WorkExperience = () => {
                       alt="icons"
                       width={12}
                       height={12}
-                      className="md:w-[24px] md:h-[24px]"
+                      className=" md:w-[24px] md:h-[24px]"
                     />
                   ))}
                 </div>
@@ -57,7 +58,7 @@ const WorkExperience = () => {
                     </li>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         ))}

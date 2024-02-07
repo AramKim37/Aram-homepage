@@ -7,6 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @layer components {
   .heroButton {
@@ -90,55 +93,6 @@
     .expanded {
       width: 50%;
     }
-  }
-
-  /*
-  Based on TailwindCSS recommendations,
-  consider using classes instead of the `@apply` directive
-  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
-*/
-  .light-button button.bt {
-    @apply relative h-[200px] flex items-end justify-center cursor-pointer border-[none];
-    outline: none;
-    background: none;
-  }
-  .light-button button.bt .button-holder {
-    @apply flex flex-col items-center justify-center h-[80px] w-[200px] bg-[#0a0a0a] text-[#0f0f0f] font-bold transition-[300ms] outline-offset-[20] rounded-[5px];
-    outline: #0f0f0f 2px solid;
-  }
-  .light-button button.bt .button-holder svg {
-    @apply h-[50px] fill-[#0f0f0f] transition-[300ms];
-  }
-  .light-button button.bt .light-holder {
-    @apply absolute h-[200px] w-[100px] flex flex-col items-center;
-  }
-  .light-button button.bt .light-holder .dot {
-    @apply absolute w-2.5 h-2.5 bg-[#0a0a0a] z-[2] rounded-[10px] top-0;
-  }
-  .light-button button.bt .light-holder .light {
-    @apply absolute w-[200px] h-[200px] top-0;
-    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
-    background: transparent;
-  }
-  .light-button button.bt:hover .button-holder svg {
-    /* @apply fill-[rgba(88,101,242,1)]; */
-    @apply fill-[#3168c0];
-  }
-  .light-button button.bt:hover .button-holder {
-    /* @apply text-[rgba(88,101,242,1)] outline-offset-2; */
-    /* outline: rgba(88, 101, 242, 1) 2px solid; */
-    @apply text-[#6aa4e5] outline-offset-2;
-
-    outline: rgb(90, 157, 239) 2px solid;
-  }
-  .light-button button.bt:hover .light-holder .light {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      180deg,
-      rgb(88, 173, 243) 0%,
-      /* rgba(88, 101, 242, 1) 0%, */ rgba(255, 255, 255, 0) 75%,
-      rgba(255, 255, 255, 0) 100%
-    );
   }
 
   nav {

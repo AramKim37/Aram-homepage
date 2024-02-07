@@ -1,9 +1,10 @@
-import { Inter } from "next/font/google";
+import { Oswald } from "next/font/google";
+
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Aram`s home",
@@ -12,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className={oswald.className} lang="en">
       <body className="background w-full items-center flex flex-col justify-center">
         <Header />
         {children}

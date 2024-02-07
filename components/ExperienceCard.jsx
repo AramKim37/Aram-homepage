@@ -31,7 +31,7 @@ const ExperienceCard = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={Capstone.src}
-              className="w-32 h-32 rounded-xl xl:w-[200px] xl:h-[200px] object-cover object-center"
+              className="w-[100px] h-[100px] rounded-xl xl:w-[200px] xl:h-[200px] object-cover object-center"
             />
             <div className="flex flex-col items-center px-2 pt-5 md:px-10">
               <h4 className="uppercase text-[12px] md:text-base">
