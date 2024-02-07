@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="px-10 flex items-center justify-between mx-auto w-full">
+    <header className="bg-[#1B1B1B] fixed top-0 px-10 flex items-center justify-between mx-auto w-full z-20">
       <motion.div
         initial={{
           x: -500,
@@ -36,7 +36,7 @@ const Header = () => {
         }}
         className="flex flex-row items-center"
       >
-        <Link href="#initial">
+        <Link href="#hero">
           <h1 className="flex gap-2 uppercase bg-transparent md:inline-flex text-sm text-gray-400 md:text-m">
             <Image src={Logo} alt="logo" className="w-20 h-20 fill-[#e6e6e6]" />
           </h1>

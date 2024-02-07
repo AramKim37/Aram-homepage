@@ -31,7 +31,7 @@ export default function Home() {
       <section className="">
         <Skills />
       </section>
-      <section>
+      <section className="w-full">
         <Contact />
       </section>
     </main>

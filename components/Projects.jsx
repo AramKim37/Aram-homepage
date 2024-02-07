@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-16 flex flex-col w-full items-center justify-center"
+      className="py-16 flex flex-col w-full items-center justify-center h-screen "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
         <h1 className="text-xl 2xl:text-4xl font-extrabold text-center text-gray-500 uppercase">
@@ -32,12 +32,12 @@ const Projects = () => {
           Click projects and echeck out latest works
         </p>
       </div>
-      <div className="w-full mt-12 flex flex-wrap md:flex-row justify-center items-center gap-5 bg-[#212121] rounded-xl p-10">
+      <div className="w-full mt-12 flex flex-wrap md:flex-row justify-center items-center gap-5  rounded-xl p-10">
         {projectItems.map((index) => (
           <div key={index} className="">
             <motion.div
               key={index}
-              className={`cursor-pointer h-[400px] bg-cover bg-center bg-blue-400 rounded-[20px] ${
+              className={`cursor-pointer h-[400px] bg-cover bg-center rounded-[20px] ${
                 index === expandedCard ? "expanded" : ""
               }`}
               variants={cardVariant}

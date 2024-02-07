@@ -15,7 +15,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center mx-auto">
+    <div
+      id="contact"
+      className="w-full min-h-screen flex flex-col items-center justify-center mx-auto"
+    >
       <h1 className="text-2xl 2xl:text-4xl font-extrabold text-center text-gray-500 tracking-[20px] uppercase">
         contact
       </h1>

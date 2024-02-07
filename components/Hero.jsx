@@ -4,6 +4,7 @@ import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Me from "@/public/image/me.jpeg";
 import Aram from "@/public/image/aram.jpg";
+// import Link from "next/link";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
@@ -21,7 +22,7 @@ const Hero = () => {
   return (
     <div
       id="#hero"
-      className="w-full min-h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden md:space-y-8"
+      className="w-full min-h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden md:space-y-8 bg-[#212121]"
     >
       <BackgroundCircles />
       <motion.img
@@ -40,16 +41,16 @@ const Hero = () => {
           <Cursor cursorColor="#5aa5e6" />
         </h1>
         <div>
-          <Link href="#about">
+          <Link href="#about" smooth={true} duration={500}>
             <button className="heroButton">About</button>
           </Link>
-          <Link href="#experience">
+          <Link href="#experience" smooth={true} duration={500}>
             <button className="heroButton">Experience</button>
           </Link>
-          <Link href="#skills">
+          <Link href="#skills" smooth={true} duration={500}>
             <button className="heroButton">Skills</button>
           </Link>
-          <Link href="#projects">
+          <Link href="#projects" smooth={true} duration={500}>
             <button className="heroButton">Projects</button>
           </Link>
         </div>

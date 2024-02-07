@@ -8,7 +8,7 @@ const WorkExperience = () => {
   return (
     <div
       id="experience"
-      className="w-max-full flex flex-col justify-center items-center mx-auto  "
+      className="w-max-full flex flex-col justify-center items-center mx-auto min-h-screen bg-[#212121] "
     >
       <h1 className="pb-20 uppercase text-center font-extrabold text-gray-500 text-xl 2xl:text-4xl">
         experience
