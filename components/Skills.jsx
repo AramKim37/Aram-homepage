@@ -8,17 +8,17 @@ const Skills = () => {
       const texts = [
         "HTML",
         "CSS",
-        "SASS",
         "JavaScript",
         "React",
-        "Vue",
-        "Nuxt",
+        "NextJS",
+        "MONGODB",
         "NodeJS",
-        "Babel",
-        "Jquery",
+        "TAILWIND",
+        "JAVA",
         "ES6",
         "GIT",
         "GITHUB",
+        "EXPRESS",
       ];
       const options = {
         radius: 300,
@@ -30,8 +30,8 @@ const Skills = () => {
     };
   }, []);
   return (
-    <div className="text-shpere">
-      <span className="tagcloud--item"></span>
+    <div id="skills" className="text-shpere">
+      <span className="tagcloud"></span>
     </div>
   );
 };

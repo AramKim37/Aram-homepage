@@ -108,7 +108,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1e1e1e;
+    /* background: #1e1e1e; */
   }
 
   .tagcloud {
@@ -120,14 +120,13 @@ html {
     font-size: 1.3em;
   }
 
-  /* Change color of each text in sphere on hover   */
   .tagcloud--item {
     color: #00ffffff;
     text-transform: uppercase;
   }
 
   .tagcloud--item:hover {
-    color: #ff6347;
+    color: #f5310e;
   }
 
   nav {
