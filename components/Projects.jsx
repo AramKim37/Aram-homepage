@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-16 flex flex-col w-full items-center justify-center h-screen "
+      className="py-16 flex flex-col w-full items-center justify-center min-h-screen "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
         <h1 className="text-xl 2xl:text-4xl font-extrabold text-center text-gray-500 uppercase">

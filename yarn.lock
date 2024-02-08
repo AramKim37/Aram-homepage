@@ -2389,6 +2389,11 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
+"TagCloud@^2.4.0":
+  "integrity" "sha512-6pgpqa+0WibWNxoNR+uggf7KziPFtgdkz0AQwMkvwgetTTwSV3JUuhbOselsXO9HEYzZ7oD9d92hQ2ksuz2Zfg=="
+  "resolved" "https://registry.npmjs.org/TagCloud/-/TagCloud-2.4.0.tgz"
+  "version" "2.4.0"
+
 "tailwind-scrollbar@^3.0.5":
   "integrity" "sha512-0ZwxTivevqq9BY9fRP9zDjHl7Tu+J5giBGbln+0O1R/7nHtBUKnjQcA1aTIhK7Oyjp6Uc/Dj6/dn8Dq58k5Uww=="
   "resolved" "https://registry.npmjs.org/tailwind-scrollbar/-/tailwind-scrollbar-3.0.5.tgz"

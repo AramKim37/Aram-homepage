@@ -1,16 +1,37 @@
-import React from "react";
-import Skill from "./Skill";
+import React, { useEffect } from "react";
+import TagCloud from "TagCloud";
 
 const Skills = () => {
+  useEffect(() => {
+    return () => {
+      const container = ".tagcloud";
+      const texts = [
+        "HTML",
+        "CSS",
+        "SASS",
+        "JavaScript",
+        "React",
+        "Vue",
+        "Nuxt",
+        "NodeJS",
+        "Babel",
+        "Jquery",
+        "ES6",
+        "GIT",
+        "GITHUB",
+      ];
+      const options = {
+        radius: 300,
+        maxSpeed: "normal",
+        initSpeed: "normal",
+        keep: true,
+      };
+      TagCloud(container, texts, options);
+    };
+  }, []);
   return (
-    <div className="min-h-screen flex flex-col text-center md:text-left xl:flex-row xl:px-10 justify-center xl:space-y-0 mx-auto items-center">
-      <h3 className="uppercase text-gray-500 text-xl text-center">Skills</h3>
-      {/* <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
-        Hover over a skill for currency proficiency
-      </h3> */}
-      <div className="grid grid-cols-4 gap-5">
-        <Skill />
-      </div>
+    <div className="text-shpere">
+      <span className="tagcloud--item"></span>
     </div>
   );
 };

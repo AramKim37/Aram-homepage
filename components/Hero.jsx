@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <div
       id="#hero"
-      className="w-full min-h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden md:space-y-8 bg-[#212121]"
+      className="w-full min-h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden md:space-y-8 "
     >
       <BackgroundCircles />
       <motion.img
@@ -32,7 +32,7 @@ const Hero = () => {
         src={Aram.src}
         className="relative rounded-full h-32 w-32 mx-auto object-cover border-2 border-[#f5e9e9] animate-pulse md:h-40 md:w-40"
       />
-      <div className="z-20">
+      <div className="z-10">
         <h2 className="md:text-sm text-[12px] uppercase text-gray-500 pb-2 tracking-[10px]">
           Software Engineer
         </h2>

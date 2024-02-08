@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#1B1B1B] fixed top-0 px-10 flex items-center justify-between mx-auto w-full z-20">
+    <header className="fixed top-0 px-10 flex items-center justify-between mx-auto w-full z-20">
       <motion.div
         initial={{
           x: -500,

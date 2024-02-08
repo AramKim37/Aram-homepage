@@ -19,16 +19,16 @@ export default function Home() {
       <section id="hero" className="w-full">
         <Hero />
       </section>
-      <section>
+      <section className="w-full">
         <About />
       </section>
-      <section>
+      <section className="w-full">
         <WorkExperience />
       </section>
-      <section>
+      <section className="w-full">
         <Projects />
       </section>
-      <section className="">
+      <section className="w-full">
         <Skills />
       </section>
       <section className="w-full">
