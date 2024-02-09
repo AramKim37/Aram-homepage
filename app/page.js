@@ -28,7 +28,7 @@ export default function Home() {
       <section className="w-full">
         <Projects />
       </section>
-      <section className="w-full">
+      <section className="w-fit">
         <Skills />
       </section>
       <section className="w-full">

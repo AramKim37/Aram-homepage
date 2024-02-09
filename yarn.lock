@@ -2389,6 +2389,11 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
+"swiper@^11.0.6":
+  "integrity" "sha512-W/Me7MQl5rNgdM5x9i3Gll76WsyVpnHn91GhBOyL7RCFUeg62aVnflzlVfIpXzZ/87FtJOfAoDH79ZH2Yq76zA=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-11.0.6.tgz"
+  "version" "11.0.6"
+
 "TagCloud@^2.4.0":
   "integrity" "sha512-6pgpqa+0WibWNxoNR+uggf7KziPFtgdkz0AQwMkvwgetTTwSV3JUuhbOselsXO9HEYzZ7oD9d92hQ2ksuz2Zfg=="
   "resolved" "https://registry.npmjs.org/TagCloud/-/TagCloud-2.4.0.tgz"

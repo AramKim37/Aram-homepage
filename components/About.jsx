@@ -14,9 +14,12 @@ const About = () => {
       id="about"
       className="flex flex-col space-y-4 items-center justify-center text-center p-10 min-h-screen"
     >
-      <h1 className="pb-20 uppercase text-center font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
+      <h1 className="uppercase text-center font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
         About
       </h1>
+      <h3 className="flex mx-auto text-2xl text-center text-gray-500 md:text-left md:mx-0 md:text-2xl 2xl:text-4xl">
+        Who I am
+      </h3>
       <div className="flex flex-col md:flex-row md:space-x-10">
         <motion.img
           initial={{
@@ -32,10 +35,7 @@ const About = () => {
           src={Aram.src}
           className="flex mx-auto basis-1/2 pt-2 md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[550px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
         />
-        <div className="flex flex-col md:justify-between space-y-10">
-          <h3 className="flex mx-auto text-2xl text-center text-gray-500 md:text-left md:mx-0 md:pt-10 md:text-2xl 2xl:text-4xl">
-            Who I am
-          </h3>
+        <div className="flex flex-col justify-center md:justify-evenly space-y-10">
           <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
             Graduate of the Southern Alberta Institute of Technology in the
             information Technology - Software Development Program. Since I
