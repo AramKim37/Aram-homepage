@@ -133,41 +133,4 @@ html {
     background: gray;
     color: white;
   }
-
-  .container.testimonials__container {
-    width: 50%;
-    height: 400px;
-    padding-bottom: 4rem;
-  }
-
-  .client__avatar {
-    width: 4rem;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .testimonial {
-    background: rgb(40, 40, 40);
-    text-align: center;
-    padding: 2rem;
-    border-radius: 2rem;
-    user-select: none;
-  }
-
-  .client__review {
-    color: blue;
-    font-weight: 300;
-    display: block;
-    width: 90%;
-    margin: 0.8rem auto 0;
-  }
-
-  .swiper-pagination-clickable .swiper-pagination-bullet {
-    background: white;
-  }
 }
