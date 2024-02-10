@@ -133,4 +133,7 @@ html {
     background: gray;
     color: white;
   }
+  .about-shadow {
+    box-shadow: rgba(215, 209, 209, 0.24) 0px 3px 8px;
+  }
 }

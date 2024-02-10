@@ -17,9 +17,9 @@ const About = () => {
       <h1 className="uppercase text-center font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
         About
       </h1>
-      <h3 className="flex mx-auto text-2xl text-center text-gray-500 md:text-left md:mx-0 md:text-2xl 2xl:text-4xl">
+      {/* <h3 className="flex mx-auto text-2xl text-center text-gray-500 md:text-left md:mx-0 md:text-2xl 2xl:text-4xl">
         Who I am
-      </h3>
+      </h3> */}
       <div className="flex flex-col md:flex-row md:space-x-10">
         <motion.img
           initial={{
@@ -33,9 +33,14 @@ const About = () => {
           }}
           viewport={{ once: true }}
           src={Aram.src}
-          className="flex mx-auto basis-1/2 pt-2 md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[550px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
+          className="flex mx-auto basis-1/2 md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[550px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
         />
-        <div className="flex flex-col justify-center md:justify-evenly space-y-10">
+        <div className="flex flex-col justify-center md:justify-between space-y-10 rounded-xl m-1 about-shadow">
+          <div className="flex gap-5">
+            <button className="heroButton">Experience</button>
+            <button className="heroButton">Education</button>
+            <button className="heroButton">Skiils</button>
+          </div>
           <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
             Graduate of the Southern Alberta Institute of Technology in the
             information Technology - Software Development Program. Since I
