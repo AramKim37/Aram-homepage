@@ -9,6 +9,11 @@ import Resume from "@/public/image/resume.png";
 
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
+  // const [showExp, setShowExp] = useState(false);
+  // const [showEdu, setShowEdu] = useState(false);
+  // const [showSkill, setShowSkill] = useState(false);
+  const [active, setActive] = useState(null);
+
   return (
     <div
       id="about"
@@ -36,20 +41,56 @@ const About = () => {
           className="flex mx-auto basis-1/2 md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[550px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
         />
         <div className="flex flex-col justify-center md:justify-between space-y-10 rounded-xl m-1 about-shadow">
-          <div className="flex gap-5">
-            <button className="heroButton">Experience</button>
-            <button className="heroButton">Education</button>
-            <button className="heroButton">Skiils</button>
+          <div className="flex gap-5 items-center justify-center">
+            <button className="heroButton" onClick={() => setActive("exp")}>
+              Experience
+            </button>
+            <button className="heroButton" onClick={() => setActive("edu")}>
+              Education
+            </button>
+            <button className="heroButton" onClick={() => setActive("skill")}>
+              Skiils
+            </button>
+            <button className="heroButton" onClick={() => setActive("who")}>
+              Me
+            </button>
           </div>
-          <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
-            Graduate of the Southern Alberta Institute of Technology in the
-            information Technology - Software Development Program. Since I
-            started studying computer science, I am always passionate and
-            motivated about coding. Also, I am very persistent and a lifelong
-            learner. So I am willing to learn new tech skills. In addtion, I am
-            a qualified developer with strong creative and analytical skills.
-          </p>
-          <div className="flex pt-5 items-center gap-5 justify-center md:justify-start">
+          <div className="flex items-center justify-center p-5">
+            {active !== "exp" && active !== "edu" && active !== "skill" && (
+              <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
+                Graduate of the Southern Alberta Institute of Technology in the
+                information Technology - Software Development Program. Since I
+                started studying computer science, I am always passionate and
+                motivated about coding. Also, I am very persistent and a
+                lifelong learner. So I am willing to learn new tech skills. In
+                addtion, I am a qualified developer with strong creative and
+                analytical skills.
+              </p>
+            )}
+            {active === "exp" && (
+              <div>
+                <h1>Capstone Project</h1>
+                <div>
+                  <h3>2021</h3>
+                  <ul>
+                    <li>Brainstorm innovative ideas for the project</li>
+                    <li>Implement payment system(Stripe)</li>
+                    <li>Works closely with the projcet team</li>
+                    <li>Collaborate with Github</li>
+                  </ul>
+                </div>
+              </div>
+            )}
+            {active === "edu" && <p>edu</p>}
+            {active === "skill" && <p>skill</p>}
+            {active !== "exp" &&
+              active !== "edu" &&
+              active !== "skill" &&
+              active === "who" &&
+              ""}
+          </div>
+
+          <div className="flex pt-5 items-center gap-5 justify-center">
             <SocialIcon
               url="https://www.linkedin.com/in/aram-kim/"
               fgColor="#64748b"
