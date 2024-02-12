@@ -6,12 +6,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Resume from "@/public/image/resume.png";
+import Capstone from "@/public/image/capstone.png";
+import BootCamp from "@/public/image/bootcamp.png";
+import React from "@/public/image/react.svg";
+import MongoDB from "@/public/image/mongodb.svg";
+import Express from "@/public/image/express.svg";
+import Nodejs from "@/public/image/node.svg";
+import GraphQl from "@/public/image/graphql.svg";
+import Typescript from "@/public/image/typescript.svg";
+import Jest from "@/public/image/jest.svg";
+import Skill from "./Skill";
 
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
-  // const [showExp, setShowExp] = useState(false);
-  // const [showEdu, setShowEdu] = useState(false);
-  // const [showSkill, setShowSkill] = useState(false);
   const [active, setActive] = useState(null);
 
   return (
@@ -22,9 +29,6 @@ const About = () => {
       <h1 className="uppercase text-center font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
         About
       </h1>
-      {/* <h3 className="flex mx-auto text-2xl text-center text-gray-500 md:text-left md:mx-0 md:text-2xl 2xl:text-4xl">
-        Who I am
-      </h3> */}
       <div className="flex flex-col md:flex-row md:space-x-10">
         <motion.img
           initial={{
@@ -38,9 +42,9 @@ const About = () => {
           }}
           viewport={{ once: true }}
           src={Aram.src}
-          className="flex mx-auto basis-1/2 md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[550px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
+          className="flex mx-auto md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[500px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
         />
-        <div className="flex flex-col justify-center md:justify-between space-y-10 rounded-xl m-1 about-shadow">
+        <div className="flex  flex-col justify-center md:justify-between space-y-1 rounded-xl m-1 about-shadow md:w-[600px] md:h-[500px] overflow-scroll">
           <div className="flex gap-5 items-center justify-center">
             <button className="heroButton" onClick={() => setActive("exp")}>
               Experience
@@ -52,37 +56,142 @@ const About = () => {
               Skiils
             </button>
             <button className="heroButton" onClick={() => setActive("who")}>
-              Me
+              Who Am I
             </button>
           </div>
           <div className="flex items-center justify-center p-5">
             {active !== "exp" && active !== "edu" && active !== "skill" && (
-              <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
-                Graduate of the Southern Alberta Institute of Technology in the
-                information Technology - Software Development Program. Since I
-                started studying computer science, I am always passionate and
-                motivated about coding. Also, I am very persistent and a
-                lifelong learner. So I am willing to learn new tech skills. In
-                addtion, I am a qualified developer with strong creative and
-                analytical skills.
-              </p>
-            )}
-            {active === "exp" && (
-              <div>
-                <h1>Capstone Project</h1>
-                <div>
-                  <h3>2021</h3>
-                  <ul>
-                    <li>Brainstorm innovative ideas for the project</li>
-                    <li>Implement payment system(Stripe)</li>
-                    <li>Works closely with the projcet team</li>
-                    <li>Collaborate with Github</li>
-                  </ul>
+              <div className="w-full h-[300px] flex flex-col items-center justify-between">
+                <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
+                  Graduate of the Southern Alberta Institute of Technology in
+                  the information Technology - Software Development Program.
+                  Since I started studying computer science, I am always
+                  passionate and motivated about coding. Also, I am very
+                  persistent and a lifelong learner. So I am willing to learn
+                  new tech skills. In addtion, I am a qualified developer with
+                  strong creative and analytical skills.
+                </p>
+                <div className="flex items-center justify-center">
+                  <SocialIcon
+                    url="https://www.linkedin.com/in/aram-kim/"
+                    fgColor="#64748b"
+                    bgColor="transparent"
+                    target="_blank"
+                    style={{ width: 60, height: 60 }}
+                    className="hover:bg-white hover:rounded-xl"
+                  />
+                  <SocialIcon
+                    url="https://github.com/AramKim37"
+                    fgColor="#64748b"
+                    bgColor="transparent"
+                    target="_blank"
+                    style={{ width: 60, height: 60 }}
+                    className="hover:bg-white hover:rounded-xl"
+                  />
+                  <a
+                    href="/image/Aram_Resume.pdf"
+                    download
+                    className="relative"
+                  >
+                    <button
+                      onMouseEnter={() => setIsHovered(true)}
+                      onMouseLeave={() => setIsHovered(false)}
+                      className="heroButton border-gray-500 font-bold hover:bg-white hover:animate-bounce hover:font-bold"
+                    >
+                      resume
+                    </button>
+                    {isHovered && (
+                      <Image
+                        src={Resume}
+                        alt="resume"
+                        width={100}
+                        height={100}
+                        className="absolute object-cover rounded-xl left-[120px] -top-7 "
+                      />
+                    )}
+                  </a>
                 </div>
               </div>
             )}
-            {active === "edu" && <p>edu</p>}
-            {active === "skill" && <p>skill</p>}
+            {active === "exp" && (
+              <div className="h-[300px] flex flex-col md:flex-row items-center justify-between gap-10 overflow-scroll">
+                <div className="flex flex-col items-center justify-center gap-5">
+                  <Image
+                    src={Capstone}
+                    alt="capstone"
+                    width={150}
+                    height={100}
+                    className="object-cover object-center rounded-xl"
+                  />
+                  <div className="w-full">
+                    <h1 className="text-gray-500 text-xl">Capstone Project</h1>
+                    <div className="flex items-center justify-center p-2 gap-5">
+                      <Image src={React} alt="react" width={24} height={24} />
+                      <Image src={GraphQl} alt="react" width={24} height={24} />
+                      <Image src={Nodejs} alt="react" width={24} height={24} />
+                    </div>
+                    <div className="text-gray-500 w-full">
+                      <h3>2021</h3>
+                      <div className="text-center md:text-left">
+                        <li>Brainstorm innovative ideas for the project</li>
+                        <li>Implement payment system(Stripe)</li>
+                        <li>Works closely with the projcet team</li>
+                        <li>Collaborate with Github</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center justify-center gap-5">
+                  <Image
+                    src={BootCamp}
+                    alt="bootcamp"
+                    width={150}
+                    height={100}
+                    className="object-cover object-center rounded-xl"
+                  />
+                  <div className="w-full">
+                    <h1 className="text-gray-500 text-xl">
+                      Full Stack Development Program
+                    </h1>
+                    <div className="flex items-center justify-center p-2 gap-5">
+                      <Image src={React} alt="react" width={24} height={24} />
+                      <Image
+                        src={Typescript}
+                        alt="react"
+                        width={24}
+                        height={24}
+                      />
+                      <Image src={MongoDB} alt="react" width={24} height={24} />
+                      <Image src={GraphQl} alt="react" width={24} height={24} />
+                      <Image src={Jest} alt="react" width={24} height={24} />
+                    </div>
+                    <div className="text-gray-500 w-full">
+                      <h3>2021</h3>
+                      <div className="text-center md:text-left">
+                        <li>Brainstorm innovative ideas for the project</li>
+                        <li>Implement payment system(Stripe)</li>
+                        <li>Works closely with the projcet team</li>
+                        <li>Collaborate with Github</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            {active === "edu" && (
+              <div className="w-full flex flex-col items-center justify-center h-[400px] text-gray-500">
+                <h1 className="">
+                  <span className="text-[#5aa5e6]">SAIT</span> - Diploma in
+                  Software Development Sept.2019 - May.2021,
+                </h1>
+                <p className="text-red-500">Calgary, AB</p>
+              </div>
+            )}
+            {active === "skill" && (
+              <div className="w-full h-[300px] flex flex-col items-center justify-between ">
+                <Skill />
+              </div>
+            )}
             {active !== "exp" &&
               active !== "edu" &&
               active !== "skill" &&
@@ -90,7 +199,7 @@ const About = () => {
               ""}
           </div>
 
-          <div className="flex pt-5 items-center gap-5 justify-center">
+          {/* <div className="flex items-center gap-5 justify-center">
             <SocialIcon
               url="https://www.linkedin.com/in/aram-kim/"
               fgColor="#64748b"
@@ -125,7 +234,7 @@ const About = () => {
                 />
               )}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

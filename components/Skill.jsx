@@ -1,49 +1,33 @@
 "use client";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import React from "@/public/image/react.svg";
+
+import React, { useEffect } from "react";
+import TagCloud from "TagCloud";
 
 const Skill = () => {
-  const [direction, setDirection] = useState(true);
   return (
-    <div className="group relative flex cursor-pointer">
-      <motion.img
-        initial={{
-          x: direction ? -200 : 200,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 2,
-        }}
-        whileInView={{ opacity: 1, x: 0 }}
-        src={React.src}
-        className="h-24 w-24 rounded-full border border-gray-500 object-cover xl:w-32 xl:h-32 filter group-hover:grayscale trasition duration-300 ease-in-out"
-      />
-      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full">
-        <div className="flex items-center h-full justify-center">
-          <p className="text-2xl text-black opacity-100 font-bold">100%</p>
-        </div>
+    <div className="w-[300px] md:w-full flex flex-col items-center justify-center">
+      <h1 className="text-2xl md:text-4xl text-gray-500 w-full text-left pb-10">
+        Tech Stack
+      </h1>
+      <div className="bg-white flex flex-col gap-5 ">
+        <ul className=" text-gray-500 uppercase flex items-center md:text-3xl justify-center gap-5 scroll">
+          <li>react</li>
+          <li>nodejs</li>
+          <li>javascript</li>
+          <li>nextjs</li>
+          <li>html</li>
+          <li>Java</li>
+        </ul>
+        <ul className=" text-gray-500 uppercase flex items-center md:text-3xl justify-center gap-5 scroll-opposite">
+          <li>css</li>
+          <li>mongodb</li>
+          <li>expressjs</li>
+          <li>nextjs</li>
+          <li>graphql</li>
+          <li>Tailwind</li>
+        </ul>
       </div>
     </div>
-    // <div className="group relative flex cursor-pointer">
-    //   <motion.img
-    //     initial={{
-    //       x: direction ? -200 : 200,
-    //       opacity: 0,
-    //     }}
-    //     transition={{
-    //       duration: 1,
-    //     }}
-    //     whileInView={{ opacity: 1, x: 0 }}
-    //     src={React.src}
-    //     className="h-24 w-24 rounded-full border border-gray-500 object-cover xl:w-32 xl:h-32 filter group-hover:grayscale trasition duration-300 ease-in-out"
-    //   />
-    //   <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full">
-    //     <div className="flex items-center h-full justify-center">
-    //       <p className="text-2xl text-black opacity-100 font-bold">100%</p>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
