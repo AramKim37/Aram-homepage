@@ -4,7 +4,8 @@ import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Initial from "@/components/Initial";
 import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
+import Testimonials from "@/components/Testimonials";
+import Skills from "@/components/Testimonials";
 import Topbar from "@/components/TopBar";
 import WorkExperience from "@/components/WorkExperience";
 import { useEffect, useState } from "react";
@@ -23,13 +24,10 @@ export default function Home() {
         <About />
       </section>
       <section className="w-full">
-        <WorkExperience />
-      </section>
-      <section className="w-full">
         <Projects />
       </section>
       <section className="w-full">
-        <Skills />
+        <Testimonials />
       </section>
       <section className="w-full">
         <Contact />

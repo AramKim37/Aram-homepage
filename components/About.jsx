@@ -26,7 +26,7 @@ const About = () => {
       id="about"
       className="flex flex-col space-y-4 items-center justify-center text-center p-10 min-h-screen"
     >
-      <h1 className="uppercase text-center font-extrabold text-gray-500 text-2xl 2xl:text-4xl">
+      <h1 className="uppercase text-center font-extrabold text-gray-500 pb-10 text-2xl 2xl:text-4xl">
         About
       </h1>
       <div className="flex flex-col md:flex-row md:space-x-10">
@@ -44,8 +44,8 @@ const About = () => {
           src={Aram.src}
           className="flex mx-auto md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[500px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
         />
-        <div className="flex  flex-col justify-center md:justify-between space-y-1 rounded-xl m-1 about-shadow md:w-[600px] md:h-[500px] overflow-scroll">
-          <div className="flex gap-5 items-center justify-center">
+        <div className="flex flex-col w-[350px] justify-center md:justify-between space-y-1 rounded-xl m-1 about-shadow items-center md:w-[600px] md:h-[500px] overflow-scroll">
+          <div className="flex gap-1 items-center justify-between">
             <button className="heroButton" onClick={() => setActive("exp")}>
               Experience
             </button>
@@ -56,12 +56,12 @@ const About = () => {
               Skiils
             </button>
             <button className="heroButton" onClick={() => setActive("who")}>
-              Who Am I
+              Me
             </button>
           </div>
-          <div className="flex items-center justify-center p-5">
+          <div className="flex items-center justify-center p-10">
             {active !== "exp" && active !== "edu" && active !== "skill" && (
-              <div className="w-full h-[300px] flex flex-col items-center justify-between">
+              <div className="w-full h-[350px] flex flex-col items-center justify-between">
                 <p className="text-[20x] md:text-lg text-gray-500 text-left 2xl:text-3xl">
                   Graduate of the Southern Alberta Institute of Technology in
                   the information Technology - Software Development Program.
@@ -114,7 +114,7 @@ const About = () => {
               </div>
             )}
             {active === "exp" && (
-              <div className="h-[300px] flex flex-col md:flex-row items-center justify-between gap-10 overflow-scroll">
+              <div className=" flex flex-col h-[350px] md:flex-row items-center justify-between gap-10 ">
                 <div className="flex flex-col items-center justify-center gap-5">
                   <Image
                     src={Capstone}
@@ -168,10 +168,10 @@ const About = () => {
                     <div className="text-gray-500 w-full">
                       <h3>2021</h3>
                       <div className="text-center md:text-left">
-                        <li>Brainstorm innovative ideas for the project</li>
-                        <li>Implement payment system(Stripe)</li>
-                        <li>Works closely with the projcet team</li>
-                        <li>Collaborate with Github</li>
+                        <li>Advance creativity</li>
+                        <li>Improved Problem-solving Skills</li>
+                        <li>Experience Jest Test</li>
+                        <li>Real Industrial workflow</li>
                       </div>
                     </div>
                   </div>
@@ -179,16 +179,17 @@ const About = () => {
               </div>
             )}
             {active === "edu" && (
-              <div className="w-full flex flex-col items-center justify-center h-[400px] text-gray-500">
-                <h1 className="">
-                  <span className="text-[#5aa5e6]">SAIT</span> - Diploma in
-                  Software Development Sept.2019 - May.2021,
+              <div className="w-full flex flex-col items-center justify-center h-[350px] text-gray-500">
+                <h1 className="text-2xl flex flex-col items-center justify-center gap-5">
+                  <span className="text-[#5aa5e6]">SAIT</span>Diploma in
+                  Software Development
+                  <span>Sept.2019 - May.2021</span>
                 </h1>
-                <p className="text-red-500">Calgary, AB</p>
+                <p className="text-red-500 text-2xl pt-5">Calgary, AB</p>
               </div>
             )}
             {active === "skill" && (
-              <div className="w-full h-[300px] flex flex-col items-center justify-between ">
+              <div className="w-full h-[350px] flex flex-col items-center justify-between ">
                 <Skill />
               </div>
             )}

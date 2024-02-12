@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/react";
 
-const Skills = () => {
+const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
@@ -74,4 +74,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Testimonials;
