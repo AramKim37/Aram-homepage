@@ -24,7 +24,7 @@ const Topbar = () => {
         <AiOutlineUser />
       </a>
       <a
-        href="#experience"
+        href="#testimonials"
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >

@@ -44,7 +44,10 @@ const Testimonials = () => {
     },
   ];
   return (
-    <section id="testimonials" className="">
+    <section
+      id="testimonials"
+      className="w-full min-h-screen flex flex-col items-center justify-center"
+    >
       <div className="flex flex-col justify-center items-center gap-5">
         <h2 className="text-3xl text-gray-500 uppercase">Testimonials</h2>
         <h5 className="pb-10 text-xl text-gray-500">Feedback from my peers</h5>
