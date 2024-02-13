@@ -61,7 +61,7 @@ const Testimonials = () => {
       >
         {testimonials.map((test) => (
           <SwiperSlide
-            className="bg-[#212121] text-center p-10 rounded-xl"
+            className=" bg-[#212121] text-center p-10 rounded-xl"
             key={test.id}
           >
             <div className="flex items-center gap-10 pb-10 justify-center text-gray-500">

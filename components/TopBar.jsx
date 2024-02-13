@@ -24,16 +24,16 @@ const Topbar = () => {
         <AiOutlineUser />
       </a>
       <a
-        href="#testimonials"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
+        href="#projects"
+        onClick={() => setActiveNav("#projects")}
+        className={activeNav === "#projects" ? "active" : ""}
       >
         <BiBook />
       </a>
       <a
-        href="#projects"
-        onClick={() => setActiveNav("#projects")}
-        className={activeNav === "#projects" ? "active" : ""}
+        href="#testimonials"
+        onClick={() => setActiveNav("#testimonials")}
+        className={activeNav === "#testimonials" ? "active" : ""}
       >
         <RiServiceLine />
       </a>

@@ -42,7 +42,7 @@ const About = () => {
           }}
           viewport={{ once: true }}
           src={Aram.src}
-          className="flex mx-auto md:mb-0 flex-shrink-0 w-[200px] h-[250px] object-cover rounded-xl md:w-[300px] md:h-[500px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
+          className="flex mx-auto md:mb-0 flex-shrink-0 w-[350px] h-[250px] object-cover rounded-xl  md:w-[300px] md:h-[500px] xl:w-[500px] xl:h-[500px] 2xl:h-[700px] pb-5 md:pb-0"
         />
         <div className="flex flex-col w-[350px] justify-center md:justify-between space-y-1 rounded-xl m-1 about-shadow items-center md:w-[600px] md:h-[500px] overflow-scroll">
           <div className="flex gap-1 items-center justify-between">
@@ -71,7 +71,7 @@ const About = () => {
                   new tech skills. In addtion, I am a qualified developer with
                   strong creative and analytical skills.
                 </p>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center gap-5 w-full">
                   <SocialIcon
                     url="https://www.linkedin.com/in/aram-kim/"
                     fgColor="#64748b"
