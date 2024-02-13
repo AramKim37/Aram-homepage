@@ -40,20 +40,20 @@ const Hero = () => {
           <span className="mr-3 text-white">{text}</span>
           <Cursor cursorColor="#5aa5e6" />
         </h1>
-        {/* <div>
+        <div>
           <Link href="#about" smooth={true} duration={500}>
             <button className="heroButton">About</button>
-          </Link>
-          <Link href="#experience" smooth={true} duration={500}>
-            <button className="heroButton">Experience</button>
-          </Link>
-          <Link href="#testimonials" smooth={true} duration={500}>
-            <button className="heroButton">testimonials</button>
           </Link>
           <Link href="#projects" smooth={true} duration={500}>
             <button className="heroButton">Projects</button>
           </Link>
-        </div> */}
+          <Link href="#testimonials" smooth={true} duration={500}>
+            <button className="heroButton">testimonials</button>
+          </Link>
+          <Link href="#contact" smooth={true} duration={500}>
+            <button className="heroButton">contact</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
