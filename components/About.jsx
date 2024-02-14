@@ -26,7 +26,7 @@ const About = () => {
       id="about"
       className="flex flex-col space-y-4 items-center justify-center text-center p-10 min-h-screen"
     >
-      <h1 className="uppercase text-center font-extrabold text-gray-500 pb-10 text-2xl 2xl:text-4xl">
+      <h1 className="uppercase text-center font-extrabold text-gray-500 pb-10 text-2xl md:text-3xl">
         About
       </h1>
       <div className="flex flex-col md:flex-row md:space-x-10">

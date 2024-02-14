@@ -19,7 +19,7 @@ const Contact = () => {
       id="contact"
       className="w-full min-h-screen flex flex-col items-center justify-center mx-auto"
     >
-      <h1 className="text-2xl 2xl:text-4xl font-extrabold text-center text-gray-500 tracking-[20px] uppercase">
+      <h1 className="text-2xl md:text-3xl font-extrabold text-center text-gray-500 uppercase">
         contact
       </h1>
       <p className="mt-4 text-xl text-gray-500 text-center">Let`s talk</p>
